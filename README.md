@@ -60,3 +60,20 @@ Official Site : Spring.io
  - 기능을 사용하는 클래스 내에 인터페이스 변수를 설정해 두고, 생성자 또는 setter를 통하여 
    인터페이스의 기능을 구현하는 실제 인스턴스를 설정한다.
  - 이를 통하여 OpenClosedPrinciple을 지킬 수 있다.
+
+### Bean Scope
+ - singleton: default
+ - prototype: creates a new bean instance for each container requeset
+ - request: scoped to an HTTP web request. Only used for web apps
+ - session: scoped to an HTTP web session. Only used for web apps
+ - global-session: scoped to a global HTTP web session. Only used for web apps
+
+### Init and Destroy method
+ - Method can have any access modifier(private, protected, public)
+ - Method can have any return type. but I cannot capture the return value
+ - Method cannot accept any arguments
+ - For 'prototype' scope bean, Spring does not call the destroy-method.
+
+### Spring Beans Using Java Annotation
+ - XML configuration can be very vervose
+ - minimize the XML configuration
