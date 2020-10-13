@@ -77,3 +77,6 @@ Official Site : Spring.io
 ### Spring Beans Using Java Annotation
  - XML configuration can be very vervose
  - minimize the XML configuration
+
+### Default Baen ID
+ - the class name, make first letter lower-case

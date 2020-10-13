@@ -72,3 +72,8 @@ Official Site : Spring.io
  - Method can have any access modifier(private, protected, public)
  - Method can have any return type. but I cannot capture the return value
  - Method cannot accept any arguments
+ - For 'prototype' scope bean, Spring does not call the destroy-method.
+
+### Spring Beans Using Java Annotation
+ - XML configuration can be very vervose
+ - minimize the XML configuration
