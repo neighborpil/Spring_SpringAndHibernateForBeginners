@@ -77,6 +77,13 @@ Official Site : Spring.io
 ### Spring Beans Using Java Annotation
  - XML configuration can be very vervose
  - minimize the XML configuration
-
+ - mark @Component on class
+ - mark @Autowired on Constructor or Method
+   (After Spring 4.3, @Autowired annotation on constructor is no longer needed 
+    if the target bean only defines on constructor to begin with.)
+ - 어떠한 메서드에도 @Autowired annotation 사용 가능
 ### Default Baen ID
  - the class name, make first letter lower-case
+
+
+
