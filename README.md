@@ -85,5 +85,46 @@ Official Site : Spring.io
 ### Default Baen ID
  - the class name, make first letter lower-case
 
+### Which spring injection type should I use?
+ - Whatever you want. But stay consistent throughout your project.
+
+### @Autowired를 사용할 때의 주의점
+ - 만약에  구현하는 Bean이 한개 이상이라면 Exception 발생한다
+ - @Qualifier("targetService")와 같이 특정 Bean을 선택해주어야 한다.
+
+### @Qualifier는 생성자, Setter, Field Injection과 같이 어디든 사용 가능하다.
+
+### Qualifier 뒤에 네이밍 규칙
+ - 첫글자가 한글자만 대문자면 소문자로 변경 FortuneService => @Qualifier("fortuneService")
+ - 두글자 이상의 대문자로 시작하는 경우 RESTService => @Qualifier("RESTService")
+
+### Qualifier를 생성자에 사용하는 경우
+ - 생성자의 첫째 파라미터로 클래스명을 적어줘야 한다
+ - Ex:
+
+ @Autowired
+ public TennisCoach(@Qualifier("randomFortuneService") FortuneService theFortuneService){ }
+
+### Properties의 값들을 주입하는 방법
+ 
+ 1. properties에 값 기입
+  src/sport.properties
+
+  foot.email=myEmail@email.com
+  foo.team=SillyJava
+ 
+ 2. XML config file을 통하여 읽어들이기
+  applicationContext.xml
+
+  <context:property-placeholder location="classpath:sport.properties"/>
+
+ 3. 주입하기  
+  @Value("@{foo.email}")
+  private String email;
 
 
+#Bean lifecycle(Annotation)
+ - @Scope("prototype") 와 같은 방식으로 붙여 줄 수있다
+ - 기본적으로는 싱글톤이다
+ - 생성(@PostConstruct), 종료(@PreDestroy)를 붙인 메서드를 정의하여 동작을 시킬 수 있다
+ - @ 
