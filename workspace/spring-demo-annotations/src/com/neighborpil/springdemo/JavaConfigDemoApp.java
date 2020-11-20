@@ -1,13 +1,13 @@
 package com.neighborpil.springdemo;
 
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class AnnotationDemoApp {
+public class JavaConfigDemoApp {
 
 	public static void main(String[] args) {
 
-		// read spring config java class 
-		var context = new AnnotationConfigApplicationContext(SportConfig.class);
+		// read spring config file
+		var context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// get the bean from spring container
 		// Coach theCoach = context.getBean("thatSillyCoach", Coach.class);

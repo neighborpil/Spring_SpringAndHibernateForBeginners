@@ -127,4 +127,26 @@ Official Site : Spring.io
  - @Scope("prototype") 와 같은 방식으로 붙여 줄 수있다
  - 기본적으로는 싱글톤이다
  - 생성(@PostConstruct), 종료(@PreDestroy)를 붙인 메서드를 정의하여 동작을 시킬 수 있다
- - @ 
+ - 만약 Prototype Scope를 사용할 경우에는 @PreDestory가 호출되지 않는다
+
+#Spring Configuration with Java Code(no xml)
+ - @Bean을 붙여줘서 스프링이 아닌 일반 자바 클래스를 스프링에서 사용 할 수 있도록 Wrap하는 것이 가능하다
+
+#Properties 사용
+ - src/폴더 밑에 파일을 생성(sport.properties)해 놓고,
+   @PropertySource("classpath:sport.properties")와 같이 하면 Value값을 외부에서 불러와 사용하는 것이 가능하다
+ - 값의 사용은 클래스 내에서
+   @Value("${foo.email}")
+   private String emaili;
+   와 같은 방식으로 사용 가능하다
+ - 만약 스프링 버전 4.2 이하라면 아래의 메소드를 @Configuration파일에 넣어주어야 한다
+
+@Bean
+public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceHolderConfigurer() {
+	return new PropertySourcesPlaceholderConfigurer();
+}
+
+
+# Component-Scan
+ - <context:component-scan base-package="com.neighborpil.springdemo" />와 같이 설정해 두었을 경우
+   하위 패키지도 재귀적으로 모두 검색한다
