@@ -8,10 +8,14 @@
 </head>
 <body>
 
-	<h2>Spring MVC Demo - Home Page</h2>
+Hello World of Spring!
 
-<hr>
+<br><br>
 
-<a href="showForm">Hello World Form</a>
+Student name: ${param.studentName }
+
+<br><br>
+
+The message: ${message }
 </body>
 </html>
