@@ -32,6 +32,8 @@
 	<util:properties id="countryOptions" location="classpath:../countries.properties" />
 	
 	<util:properties id="favoriteLanguageOptions" location="classpath:../favoriteLanguages.properties" />
+	
+	<util:properties id="operatingSystemOptions" location="classpath:../operatingSystemOptions.properties" />
 </beans>
 
 

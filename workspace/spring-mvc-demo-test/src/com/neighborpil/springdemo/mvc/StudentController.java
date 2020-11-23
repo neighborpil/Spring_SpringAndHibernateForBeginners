@@ -2,6 +2,7 @@ package com.neighborpil.springdemo.mvc;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -19,6 +20,9 @@ public class StudentController {
 	@Value("#{favoriteLanguageOptions}")
 	private HashMap<String, String> favoriteLanguageOptions;
 	
+	@Value("#{operatingSystemOptions}")
+	private Map<String, String> _operatingSystemOptions;
+	
 	@RequestMapping("/showForm")
 	public String showForm(Model model) {
 
@@ -29,6 +33,8 @@ public class StudentController {
 		model.addAttribute("countryOptions", theCountryOptions);
 		
 		model.addAttribute("favoriteLanguageOptions", favoriteLanguageOptions);
+		
+		model.addAttribute("operatingSystemOptions", _operatingSystemOptions);
 		
 		return "student-form";
 	}

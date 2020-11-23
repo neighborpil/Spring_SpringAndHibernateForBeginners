@@ -166,6 +166,25 @@ public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceHolderCon
  - form:form : 메인 폼 컨테이너
  - form:input : text field
  - form:textarea : 멀티라인 텍스트 필드
- - form:checkbox : 체크박스
- - form:radiobutton : 라디오 버튼
+ - form:checkbox(es) : 체크박스
+ - form:radiobutton(s) : 라디오 버튼
  - form:select : 드랍다운리스트
+
+# Jstl
+ - <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 를 헤드에 
+ - <c:forEach var="temp" items="${operatingSystemOptions}">
+     <li>${temp}</li>
+   </c:forEach>
+
+# Validation Annotations
+ - @NotNull
+ - @Min: Must be a number >= value
+ - @Max: Must be a number <= value
+ - @Size: Size must match the given size
+ - @Pattern: 정규식에 일치
+ - @Future / @Past : Date must be in future or past of given date
+
+# Spring MVC Validation
+ - Annotation Validator
+ - http://hibernate.org/validator/
+ - Spring MVC Validation을 사용할 경우, BindingResult 파라미터의 위치는 반드시 ModelAttribute 파라미터 뒤에 위치해야 한다.
