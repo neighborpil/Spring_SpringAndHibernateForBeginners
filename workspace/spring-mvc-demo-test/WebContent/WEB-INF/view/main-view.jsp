@@ -8,5 +8,8 @@
 </head>
 <body>
 	<h2>Main View</h2>
+	<a href="hello/showForm">Link Ask</a>
+	<br><br>
+	<a href="student/showForm">Show Student Name</a>
 </body>
 </html>

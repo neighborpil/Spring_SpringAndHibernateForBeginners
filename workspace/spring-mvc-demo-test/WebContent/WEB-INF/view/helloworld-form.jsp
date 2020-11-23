@@ -17,6 +17,11 @@
 		<input type="text" name="studentName" placeholder="What's your name?" />
 		<input type="submit" />
 	</form>
+	<br><br>
+	<form action="processFormTwo" action="GET">
+		<input type="text" name="studentName" placeholder="What's ur name" />
+		<input type="submit" value="Ask">
+	</form>
 	
 </body>
 </html>

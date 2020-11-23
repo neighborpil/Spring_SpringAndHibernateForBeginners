@@ -150,3 +150,22 @@ public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceHolderCon
 # Component-Scan
  - <context:component-scan base-package="com.neighborpil.springdemo" />와 같이 설정해 두었을 경우
    하위 패키지도 재귀적으로 모두 검색한다
+
+# @RequestMapping("/path")
+ - 클래스에 상용할 경우 내부의 모든 메소드의 매핑에 "/path"가 붙는다
+ - 메소드에 사용하여 주소에 매핑한다
+
+# @RequestParam("variableName") String name
+ - form의 input을 데이터 바인딩 시킨다.
+ - jsp페이지의 input태그의 name과 컨트롤러 내 함수의 variableName이 같아야 한다.
+
+# Spring MVC FormTag
+ - Taglib를 붙여주어야 한다
+   <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %> 
+
+ - form:form : 메인 폼 컨테이너
+ - form:input : text field
+ - form:textarea : 멀티라인 텍스트 필드
+ - form:checkbox : 체크박스
+ - form:radiobutton : 라디오 버튼
+ - form:select : 드랍다운리스트
