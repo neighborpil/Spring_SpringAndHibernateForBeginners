@@ -34,6 +34,11 @@
 	<util:properties id="favoriteLanguageOptions" location="classpath:../favoriteLanguages.properties" />
 	
 	<util:properties id="operatingSystemOptions" location="classpath:../operatingSystemOptions.properties" />
+	
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames" value="resources/messages" />	
+	</bean>
 </beans>
 
 

@@ -188,3 +188,123 @@ public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceHolderCon
  - Annotation Validator
  - http://hibernate.org/validator/
  - Spring MVC Validation을 사용할 경우, BindingResult 파라미터의 위치는 반드시 ModelAttribute 파라미터 뒤에 위치해야 한다.
+
+# @InitBinder
+ - 설정을 해주면 해당 컨트롤러 내의 메소드들이 호출될 때에 파라미터가 전부 앞뒤로 Trim되어 호출된다
+
+```
+	@InitBinder
+	public void initBinder(WebDataBinder dataBinder) {
+		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+		
+		dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+	}
+```
+
+# 커스텀 에러 메시지 보여주기
+
+ - 자바 src폴더 밑에 resources 디렉토리를 생성하고
+ - messages.properties 파일을 생성한다.
+ - 그 안에 typeMismatch.customer.freePasses=Invalid Number   라고 적어준다
+
+```
+	<!-- Load custom message resources -->	
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames" value="resources/messages" />	
+	</bean>
+```
+
+# Validation 예제
+
+```
+	@NotNull(message="이(가) 필요합니다.")
+	@Size(min=1, message="이(가) 필요합니다.")
+	private String lastName;
+	
+	@NotNull(message="이(가) 필요합니다")
+	@Min(value=0, message="0보다 큰 수를 입력해 주세요.")
+	@Max(value=10, message="10보다 작은 수를 입력해 주세요.")
+	private Integer freePasses;
+	
+	@NotNull(message="을(를) 입력해 주세요.")
+	@Pattern(regexp="^[\\w]{5}", message="5자리의 숫자 또는 문자만 입력해 주세요.")
+	private String postalCode;
+
+```
+
+
+# CustomValidator
+ - @interface를 생성
+
+```
+
+@Constraint(validatedBy = CourseCodeContraintValidator.class)
+@Target({ ElementType.METHOD, ElementType.FIELD })
+@Retention(RetentionPolicy.RUNTIME)
+public @interface CourseCode {
+
+	// define default course code
+	public String value() default "CLS";
+	
+	// define default error message
+	public String message() default "Must start with CLS";
+	
+	// define default groups
+	public Class<?>[] groups() default {};
+	
+	// define default payloads
+	public Class<? extends Payload>[] payload() default {};
+}
+
+
+```
+
+ - ConstraintValidator를 구현
+
+```
+
+public class CourseCodeContraintValidator implements ConstraintValidator<CourseCode, String>{
+
+	private String coursePrefix;
+	
+	@Override
+	public void initialize(CourseCode theCourseCode) {
+
+			coursePrefix = theCourseCode.value();
+	}
+
+
+	@Override
+	public boolean isValid(String theCode, ConstraintValidatorContext theConstraintValidatorContext) {
+		
+		if(theCode == null) {
+			return false;
+		}
+		
+		return theCode.startsWith(coursePrefix);
+	}
+}
+
+```
+
+ - 사용
+
+```
+
+//	@CourseCode
+	@CourseCode(value="ENG", message="CourseCode should start with ENG")
+	private String courseCode;
+
+```
+
+
+# Object-To-Relational Mapping(ORM)
+ - 자바 객체와 DB 테이블을 매칭시켜 준다
+ - 쿼리문을 많이 줄일 수 있다
+
+# Hibernate ORM 다운로드 페이지
+ - http://hibernate.org/orm/
+
+# Entity Class
+ - database에 매핑된 자바 클래스

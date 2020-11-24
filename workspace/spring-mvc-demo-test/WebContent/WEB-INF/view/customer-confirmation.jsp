@@ -7,12 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>Main View</h2>
-	<a href="hello/showForm">Link Ask</a>
-	<br><br>
-	<a href="student/showForm">Show Student Name</a>
-	<br><br>
-	<a href="customer/showForm">Show Customer Name</a>
-	<br><br>
+
+Confirmed: ${customer.firstName } ${customer.lastName }
+<br><br>
+Free Passes: ${customer.freePasses }
+<br><br>
+Postal Code: ${customer.postalCode }
+<br><br>
+Course Code: ${customer.courseCode }
+<br><br>
 </body>
 </html>
