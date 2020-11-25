@@ -1,4 +1,4 @@
-package com.neighborpil.hibernate.demo.entity;
+package com.luv2code.hibernate.demo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,11 +26,10 @@ public class Student {
 	private String email;
 	
 	public Student() {
-	
+		
 	}
-	
-	public Student(String firstName, String lastName, String email) {
 
+	public Student(String firstName, String lastName, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
@@ -74,3 +73,7 @@ public class Student {
 	}
 	
 }
+
+
+
+
