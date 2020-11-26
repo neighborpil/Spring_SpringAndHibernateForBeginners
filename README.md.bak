@@ -146,3 +146,165 @@ public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceHolderCon
 	return new PropertySourcesPlaceholderConfigurer();
 }
 
+
+# Component-Scan
+ - <context:component-scan base-package="com.neighborpil.springdemo" />와 같이 설정해 두었을 경우
+   하위 패키지도 재귀적으로 모두 검색한다
+
+# @RequestMapping("/path")
+ - 클래스에 상용할 경우 내부의 모든 메소드의 매핑에 "/path"가 붙는다
+ - 메소드에 사용하여 주소에 매핑한다
+
+# @RequestParam("variableName") String name
+ - form의 input을 데이터 바인딩 시킨다.
+ - jsp페이지의 input태그의 name과 컨트롤러 내 함수의 variableName이 같아야 한다.
+
+# Spring MVC FormTag
+ - Taglib를 붙여주어야 한다
+   <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %> 
+
+ - form:form : 메인 폼 컨테이너
+ - form:input : text field
+ - form:textarea : 멀티라인 텍스트 필드
+ - form:checkbox(es) : 체크박스
+ - form:radiobutton(s) : 라디오 버튼
+ - form:select : 드랍다운리스트
+
+# Jstl
+ - <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 를 헤드에 
+ - <c:forEach var="temp" items="${operatingSystemOptions}">
+     <li>${temp}</li>
+   </c:forEach>
+
+# Validation Annotations
+ - @NotNull
+ - @Min: Must be a number >= value
+ - @Max: Must be a number <= value
+ - @Size: Size must match the given size
+ - @Pattern: 정규식에 일치
+ - @Future / @Past : Date must be in future or past of given date
+
+# Spring MVC Validation
+ - Annotation Validator
+ - http://hibernate.org/validator/
+ - Spring MVC Validation을 사용할 경우, BindingResult 파라미터의 위치는 반드시 ModelAttribute 파라미터 뒤에 위치해야 한다.
+
+# @InitBinder
+ - 설정을 해주면 해당 컨트롤러 내의 메소드들이 호출될 때에 파라미터가 전부 앞뒤로 Trim되어 호출된다
+
+```
+	@InitBinder
+	public void initBinder(WebDataBinder dataBinder) {
+		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+		
+		dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+	}
+```
+
+# 커스텀 에러 메시지 보여주기
+
+ - 자바 src폴더 밑에 resources 디렉토리를 생성하고
+ - messages.properties 파일을 생성한다.
+ - 그 안에 typeMismatch.customer.freePasses=Invalid Number   라고 적어준다
+
+```
+	<!-- Load custom message resources -->	
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames" value="resources/messages" />	
+	</bean>
+```
+
+# Validation 예제
+
+```
+	@NotNull(message="이(가) 필요합니다.")
+	@Size(min=1, message="이(가) 필요합니다.")
+	private String lastName;
+	
+	@NotNull(message="이(가) 필요합니다")
+	@Min(value=0, message="0보다 큰 수를 입력해 주세요.")
+	@Max(value=10, message="10보다 작은 수를 입력해 주세요.")
+	private Integer freePasses;
+	
+	@NotNull(message="을(를) 입력해 주세요.")
+	@Pattern(regexp="^[\\w]{5}", message="5자리의 숫자 또는 문자만 입력해 주세요.")
+	private String postalCode;
+
+```
+
+
+# CustomValidator
+ - @interface를 생성
+
+```
+
+@Constraint(validatedBy = CourseCodeContraintValidator.class)
+@Target({ ElementType.METHOD, ElementType.FIELD })
+@Retention(RetentionPolicy.RUNTIME)
+public @interface CourseCode {
+
+	// define default course code
+	public String value() default "CLS";
+	
+	// define default error message
+	public String message() default "Must start with CLS";
+	
+	// define default groups
+	public Class<?>[] groups() default {};
+	
+	// define default payloads
+	public Class<? extends Payload>[] payload() default {};
+}
+
+
+```
+
+ - ConstraintValidator를 구현
+
+```
+
+public class CourseCodeContraintValidator implements ConstraintValidator<CourseCode, String>{
+
+	private String coursePrefix;
+	
+	@Override
+	public void initialize(CourseCode theCourseCode) {
+
+			coursePrefix = theCourseCode.value();
+	}
+
+
+	@Override
+	public boolean isValid(String theCode, ConstraintValidatorContext theConstraintValidatorContext) {
+		
+		if(theCode == null) {
+			return false;
+		}
+		
+		return theCode.startsWith(coursePrefix);
+	}
+}
+
+```
+
+ - 사용
+
+```
+
+//	@CourseCode
+	@CourseCode(value="ENG", message="CourseCode should start with ENG")
+	private String courseCode;
+
+```
+
+
+# Object-To-Relational Mapping(ORM)
+ - 자바 객체와 DB 테이블을 매칭시켜 준다
+ - 쿼리문을 많이 줄일 수 있다
+
+# Hibernate ORM 다운로드 페이지
+ - http://hibernate.org/orm/
+
+# Entity Class
+ - database에 매핑된 자바 클래스
