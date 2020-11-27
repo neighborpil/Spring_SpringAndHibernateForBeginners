@@ -1,4 +1,4 @@
-package com.neighborpil.testdb;
+package com.luv2code.testdb;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -8,7 +8,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import java.sql.*;
+
 /**
  * Servlet implementation class TestDbServlet
  */
@@ -25,8 +27,8 @@ public class TestDbServlet extends HttpServlet {
 		String user = "springstudent";
 		String pass = "springstudent";
 		
-		String jdbcUrl = "jdbc:mysql://localhost:3306/web_customer_tracker?serverTimezone=Asia/Seoul&characterEncoding=utf8&useSSL=false";
-		String driver = "com.mysql.cj.jdbc.Driver";
+		String jdbcUrl = "jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false";
+		String driver = "com.mysql.jdbc.Driver";
 		
 		// get connection to database
 		try {
@@ -47,6 +49,7 @@ public class TestDbServlet extends HttpServlet {
 			exc.printStackTrace();
 			throw new ServletException(exc);
 		}
+	
 	
 	}
 

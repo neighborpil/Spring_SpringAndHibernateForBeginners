@@ -318,3 +318,47 @@ public class CourseCodeContraintValidator implements ConstraintValidator<CourseC
  - @OneToMany : FetchType.LAZY
  - @ManyToOne : FetchType.EAGER
  - @ManyToMany : FetchType.LAZY
+
+
+# @Transactional
+ - 자동으로 트랜잭션 처리
+ - 
+
+# @Repositoy
+ - DAO implementations를 나타냄
+
+
+# 리디릭팅
+
+<% response.sendRedirect("customer/list"); %>
+
+# @GetMapping, @PostMapping(스프링 4.3이상)
+ - 기존에는 RequestMethod를 지정하는 방식(GET, POST)으로 할 수 있었다.
+   RequestMapping(path="/path" method="RequestMethod.GET")
+   이 방식으로 길어지므로 @GetMapping, @PostMapping과 같은 방식으로 간결하게 사용 가능하다
+ 
+# Aspect Oriented Programming(AOP)
+ - Cross-Cutting Concerns
+
+# Aspect
+ - Aspect can be reused at multiple locations
+
+
+# Advice Type
+ - Before advice: run before the method
+ - After finally advice: run after the method(finally)
+ - After returning advice: run after the method(success execution)
+ - After throwing advice: run after the method(if exceptoin thrown)
+ - After finally advice: run after the method(finally)
+ - Around advice: run before and after method
+
+# Weaving
+ - advised object를 생성하여 aspect를 target object에 연결하는 것
+ - Compile-time, run-time(slowest)
+
+# AOP Framework
+ - Spring AOP : 스프링에서 지원하는 것, 캐싱, 트랜잭션 등 스프링 구동에 필요한것 지원, run-time
+ - AspectJ : 커스텀 AOP 지원 가능,
+
+# AspectJ Weaver 다운로드 maven 주소
+ - https://mvnrepository.com/artifact/org.aspectj/aspectjweaver

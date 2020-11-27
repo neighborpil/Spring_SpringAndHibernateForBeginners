@@ -308,3 +308,32 @@ public class CourseCodeContraintValidator implements ConstraintValidator<CourseC
 
 # Entity Class
  - database에 매핑된 자바 클래스
+
+# Fetch / Eager
+ - Eager: 모든 데이터를 가지고 오는 것
+ - Fetch: 요청한 것만 가져옴(Prefered)
+
+# Default Fetch Type
+ - @OneToOne : FetchType.EAGER
+ - @OneToMany : FetchType.LAZY
+ - @ManyToOne : FetchType.EAGER
+ - @ManyToMany : FetchType.LAZY
+
+
+# @Transactional
+ - 자동으로 트랜잭션 처리
+ - 
+
+# @Repositoy
+ - DAO implementations를 나타냄
+
+
+# 리디릭팅
+
+<% response.sendRedirect("customer/list"); %>
+
+# @GetMapping, @PostMapping(스프링 4.3이상)
+ - 기존에는 RequestMethod를 지정하는 방식(GET, POST)으로 할 수 있었다.
+   RequestMapping(path="/path" method="RequestMethod.GET")
+   이 방식으로 길어지므로 @GetMapping, @PostMapping과 같은 방식으로 간결하게 사용 가능하다
+ 
