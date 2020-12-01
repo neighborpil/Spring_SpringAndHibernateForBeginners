@@ -650,3 +650,24 @@ my-app-workspace
    -java
    -resources
  -target : compied files
+
+# Spring Security protects against Cross-Site Request Forgery(CSRF) - (c surf라고 읽음)
+ - csrf란? 현재 로그인되어 있는 웹어플리케이션에 action을 하게 하는 공격
+   ex: You are logged into your banking app
+       Tricked into sending money to another person
+
+ - csrf를 방어하기 위해서는 추가적인 인증 데이터 또는 토큰을 html폼에 추가해야 함
+ - 방지법: 스프링 시큐리티를 적용하고, 어떠한 form에서도 form:form 사용
+ - 웬만하면 GET보다 POST 사용
+ - 만약 form:form을 사용하지 않으면, 수동으로 CSRF 토큰을 추가해주어야 한다
+
+ <form action="..." method="POST>
+	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+ </form>
+
+# Restricting Access to Roles
+ - configuration파일을 수정하면 된다
+ - antMatcheres(<<add apth to match on>>).hasRole(<< authorized role >>)
+
+# mysql JDBC 옵션
+ - jdbc:mysql://localhost:3306/web_customer_tracker?allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Seoul&amp;characterEncoding=utf8&amp;useSSL=false
