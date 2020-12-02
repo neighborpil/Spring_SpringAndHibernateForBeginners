@@ -671,3 +671,28 @@ my-app-workspace
 
 # mysql JDBC 옵션
  - jdbc:mysql://localhost:3306/web_customer_tracker?allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Seoul&amp;characterEncoding=utf8&amp;useSSL=false
+
+# jackson-databind에서 모르는 프로퍼티 무시하기
+ - @JsonIgnoreProperties(ignoreUnknown=true)
+
+# Http Response
+ - 100-199 : Informational
+ - 200-299 : Successful
+ - 300-399 : Redirection
+ - 400-499 : Client error
+ - 500-599 : Server error
+
+# MIME Content Types
+ - The message format is described by MIME content type
+ - Multipurpose Internet Mail-Extension
+ - Basic Syntax: type/sub-type
+ - Ex:
+  + text/html, text/plain
+  + application/json, application/xml
+
+# RestApi테스트 툴
+ - Postman: https://www.postman.com/downloads/
+
+# 간단 JSON테스트 주소
+ - http://teamaqua.github.io/JSONTest/
+ - http://jsonplaceholder.typicode.com/
