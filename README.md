@@ -712,3 +712,43 @@ my-app-workspace
 
 # 스프링부터 프로젝트 생성 사이트
  - https://start.spring.io/
+
+ - 스피링 부트 스타터 리스트 
+   https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter
+# Spring boot component scan
+ - Default scanning is fine if everything is under
+   com.neighborpil.springboot.demo.myapp
+
+ - 만약 다른 패키지가 있을 때에는 수동으로 설정해야 한다
+   @SpringBootApplication(scanBeanPackage="com.neighborpil.springboot.demo.myapp", "org.acme.iot.utils")
+
+# Spring Boot 주의점(Jar파일 생성시)
+ - 스프링 레거시 프로젝트처럼 src/main/webapp디렉토리를 사용하지 말것
+   이거는 War파일을 만들기 위해서 사용되는 것이기 때문에 Jar파일을 만들 때에 무시된다.
+ - 스프링 부트는 pom.xml에서 parent로 버전을 관리한다.
+   이를 통하여 하부 버전은 각각 관리 할 필요 없이 부모버전에 맞추어 호환성이 적용된 버전이 받아진다
+
+# spring Boot Devtools
+ - 소스 변경시 톰캣을 재시작하지 않고 바로 변경사항을 적용해준다
+ - dependency
+<!-- Add support for automatic reloading -->         
+<dependency>                                         
+	<groupId>org.springframework.boot</groupId>      
+	<artifactId>spring-boot-devtools</artifactId>    
+</dependency>
+
+# spring boot actuator
+ - dependency를 추가해주는 것 만으로도 restapi방식으로 서버 분석 툴을 추가해준다
+ - dependency
+<!-- Add support for actuator -->                           
+<dependency>                                                
+	<groupId>org.springframework.boot</groupId>             
+	<artifactId>spring-boot-starter-actuator</artifactId>   
+</dependency>
+ - 모든 것을 보여주고 싶다면
+   management.endpoints.web.exposure.include=*
+ - 일부만 보여주고 싶다면
+   
+
+# JSON Formatter 크롬 확장 프로그램
+ - https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa/related

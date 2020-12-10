@@ -3,7 +3,7 @@ package com.neighborpil.springboot.demo.myapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication()
 public class MyappApplication {
 
 	public static void main(String[] args) {
