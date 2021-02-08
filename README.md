@@ -752,3 +752,28 @@ my-app-workspace
 
 # JSON Formatter 크롬 확장 프로그램
  - https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa/related
+
+
+# spring boot 실행 방법
+## 방법 1
+  1. 프로젝트 워크스페이스 폴더로 이동
+  2. 커맨드프롬프트 실행
+  3. ./mvnw package 실행하여 패키지 생성
+  4. cd target 하여 타겟 폴더로 이동
+  5. java -jar **jar파일명**으로 실행
+  6. 종료할 때는 Ctrl + C
+
+## 방법2
+  1. 프로젝트 워크스페이스 폴더로 이동
+  2. 커맨드프롬프트 실행
+  3. ./mvnw spring-boot:run  
+  4. 종료할 때는 Ctrl + C
+
+# Spring Boot 커스텀 properties 사용
+ 1. 기본적으로 src/main/resources/application.properties에 변수 적어 사용하면 된다
+ 2. java코드 내에서 @Value 어노테이션 붙여서 사용하면 됨
+```
+@Value("${coach.name})
+private String CoachName;
+```
+
