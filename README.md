@@ -777,3 +777,33 @@ my-app-workspace
 private String CoachName;
 ```
 
+## Spring boot common properties document
+ - https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#common-application-properties
+
+## Spring boot properties group
+ - Core
+   + logging.level.org.springframework=DEBUG
+   + logging.level.org.HIBERNATE=TRACE
+   + logging.level.com/luv2code=INFO
+   + logging.file=my-crazy-stuff.log
+ - Web
+   + server.port=7070
+   + server.servlet.context-path=/my-silly-app
+   + server.servlet.session.timeout=15m
+ - Security
+   + spring.security.user.name=tiger
+   + spring.security.user.password=scott
+ - Data
+   + spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
+   + spring.datasource.username=tiger
+   + spring.datasource.password=scott
+ - Actuator
+   + management.endpoint.web.exposure.include=*
+   + management.endpoint.web.exposure.exclude=beans,mappign
+   + management.endpoint.web.base-path=/actuator
+ - Integration
+ - DevTools
+ - Testing
+
+## ¡ØLogging level
+ - Trace, Debug, Info, Warn, Error, Fatal, Off
