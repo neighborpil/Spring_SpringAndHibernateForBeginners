@@ -1,4 +1,4 @@
-package com.neighborpil.springboot.entity;
+package com.neighborpil.springboot.cruddemo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

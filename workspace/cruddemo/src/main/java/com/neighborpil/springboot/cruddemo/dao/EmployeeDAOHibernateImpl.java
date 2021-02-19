@@ -1,4 +1,4 @@
-package com.neighborpil.springboot.dao;
+package com.neighborpil.springboot.cruddemo.dao;
 
 import java.util.List;
 
@@ -10,10 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.neighborpil.springboot.entity.Employee;
+import com.neighborpil.springboot.cruddemo.entity.Employee;
 
 @Repository
-public class EmployeeDAOHibernateImple implements EmployeeDAO {
+public class EmployeeDAOHibernateImpl implements EmployeeDAO {
 
 	// define field for entity manager
 	
@@ -22,7 +22,7 @@ public class EmployeeDAOHibernateImple implements EmployeeDAO {
 	// set up constructor injection
 
 	@Autowired
-	public EmployeeDAOHibernateImple(EntityManager theEntityManager) {
+	public EmployeeDAOHibernateImpl(EntityManager theEntityManager) {
 		entityManager = theEntityManager;
 	}
 	

@@ -1,4 +1,4 @@
-package com.neighborpil.springboot.controller;
+package com.neighborpil.springboot.cruddemo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
