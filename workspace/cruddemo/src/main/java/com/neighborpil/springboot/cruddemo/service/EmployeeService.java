@@ -1,10 +1,10 @@
-package com.neighborpil.springboot.cruddemo.dao;
+package com.neighborpil.springboot.cruddemo.service;
 
 import java.util.List;
 
 import com.neighborpil.springboot.cruddemo.entity.Employee;
 
-public interface EmployeeDAO {
+public interface EmployeeService {
 
 	public List<Employee> findAll();
 	
