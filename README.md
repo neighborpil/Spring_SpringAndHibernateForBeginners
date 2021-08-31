@@ -13,7 +13,7 @@ Official Site : Spring.io
 
 ### Eclipse : www.eclipse.org
 
-### Spring ¶óÀÌºê·¯¸® ´Ù¿î·Îµå ÆäÀÌÁö
+### Spring ë¼ì´ë¸ŒëŸ¬ë¦¬ ë‹¤ìš´ë¡œë“œ í˜ì´ì§€
  - https://repo.spring.io/release/org/springframework/spring/
 
 
@@ -41,25 +41,25 @@ Official Site : Spring.io
  - simply Java Object
  - Java Objects that are created by the Spring Container, then Spring refers to them as "Spring Beans"
 
-### Eclipse¿¡¼­ FullPath¸¦ ¾ò´Â ¹æ¹ı
- 1. ÇØ´çÇÏ´Â Å¬·¡½º ÆÄÀÏÀ» ¿¬´Ù.
- 2. Å¬·¡½º ÀÌ¸§À» Å¬¸¯ÇÑ´Ù.
- 3. Å¬·¡½º ÀÌ¸§À» ¿ìÅ¬¸¯ÇÏ¿© "Copy Qualified Name"À» ¼±ÅÃÇÏ¸é º¹»ç°¡ µÈ´Ù.
+### Eclipseì—ì„œ FullPathë¥¼ ì–»ëŠ” ë°©ë²•
+ 1. í•´ë‹¹í•˜ëŠ” í´ë˜ìŠ¤ íŒŒì¼ì„ ì—°ë‹¤.
+ 2. í´ë˜ìŠ¤ ì´ë¦„ì„ í´ë¦­í•œë‹¤.
+ 3. í´ë˜ìŠ¤ ì´ë¦„ì„ ìš°í´ë¦­í•˜ì—¬ "Copy Qualified Name"ì„ ì„ íƒí•˜ë©´ ë³µì‚¬ê°€ ëœë‹¤.
 
 ### Spring Bean
- - ÀÎ½ºÅÏ½º¶ó º¸¸é µÈ´Ù.
- - xml ¶Ç´Â annotaionÀ» ÅëÇÏ¿© Á¤ÀÇ¸¦ ÇÑ´Ù.
- - ApplicationContext¸¦ ÅëÇÏ¿© ºóÀ» »ı¼º(getBean)ÇÑ´Ù.
- - »ı¼ºµÈ ºóÀº ÀÎÅÍÆäÀÌ½º º¯¼ö¿¡ ´ã´Â´Ù.
- - ÇÁ·Î±×·¥ ½ÇÇà ºÎºĞ¿¡¼­´Â ÀÎÅÍÆäÀÌ½ºÀÇ ÇÔ¼ö¸¦ ½ÇÇàÇÑ´Ù.
- - ÀÌ·¸°Ô ÇÔÀ¸·Î½á ½ÇÁ¦ ÄÚµå´Â º¯°æÇÏÁö ¾Ê°í, xml ¶Ç´Â annotation¸¸ ¹Ù²ŞÀ¸·Î½á ±â´ÉÀ» ¹Ù²Ü ¼ö ÀÖ´Ù.
+ - ì¸ìŠ¤í„´ìŠ¤ë¼ ë³´ë©´ ëœë‹¤.
+ - xml ë˜ëŠ” annotaionì„ í†µí•˜ì—¬ ì •ì˜ë¥¼ í•œë‹¤.
+ - ApplicationContextë¥¼ í†µí•˜ì—¬ ë¹ˆì„ ìƒì„±(getBean)í•œë‹¤.
+ - ìƒì„±ëœ ë¹ˆì€ ì¸í„°í˜ì´ìŠ¤ ë³€ìˆ˜ì— ë‹´ëŠ”ë‹¤.
+ - í”„ë¡œê·¸ë¨ ì‹¤í–‰ ë¶€ë¶„ì—ì„œëŠ” ì¸í„°í˜ì´ìŠ¤ì˜ í•¨ìˆ˜ë¥¼ ì‹¤í–‰í•œë‹¤.
+ - ì´ë ‡ê²Œ í•¨ìœ¼ë¡œì¨ ì‹¤ì œ ì½”ë“œëŠ” ë³€ê²½í•˜ì§€ ì•Šê³ , xml ë˜ëŠ” annotationë§Œ ë°”ê¿ˆìœ¼ë¡œì¨ ê¸°ëŠ¥ì„ ë°”ê¿€ ìˆ˜ ìˆë‹¤.
 
 ### Dependency Injection(DI)
  
- - ÀÎÅÍÆäÀÌ½º·Î ±â´ÉÀ» Á¤ÀÇÇØµÎ°í, ±× ±â´ÉÀ» ±¸ÇöÇÏ´Â Å¬·¡½º¸¦ »ı¼ºÇÑ´Ù.
- - ±â´ÉÀ» »ç¿ëÇÏ´Â Å¬·¡½º ³»¿¡ ÀÎÅÍÆäÀÌ½º º¯¼ö¸¦ ¼³Á¤ÇØ µÎ°í, »ı¼ºÀÚ ¶Ç´Â setter¸¦ ÅëÇÏ¿© 
-   ÀÎÅÍÆäÀÌ½ºÀÇ ±â´ÉÀ» ±¸ÇöÇÏ´Â ½ÇÁ¦ ÀÎ½ºÅÏ½º¸¦ ¼³Á¤ÇÑ´Ù.
- - ÀÌ¸¦ ÅëÇÏ¿© OpenClosedPrincipleÀ» ÁöÅ³ ¼ö ÀÖ´Ù.
+ - ì¸í„°í˜ì´ìŠ¤ë¡œ ê¸°ëŠ¥ì„ ì •ì˜í•´ë‘ê³ , ê·¸ ê¸°ëŠ¥ì„ êµ¬í˜„í•˜ëŠ” í´ë˜ìŠ¤ë¥¼ ìƒì„±í•œë‹¤.
+ - ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ëŠ” í´ë˜ìŠ¤ ë‚´ì— ì¸í„°í˜ì´ìŠ¤ ë³€ìˆ˜ë¥¼ ì„¤ì •í•´ ë‘ê³ , ìƒì„±ì ë˜ëŠ” setterë¥¼ í†µí•˜ì—¬ 
+   ì¸í„°í˜ì´ìŠ¤ì˜ ê¸°ëŠ¥ì„ êµ¬í˜„í•˜ëŠ” ì‹¤ì œ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì„¤ì •í•œë‹¤.
+ - ì´ë¥¼ í†µí•˜ì—¬ OpenClosedPrincipleì„ ì§€í‚¬ ìˆ˜ ìˆë‹¤.
 
 ### Bean Scope
  - singleton: default
@@ -81,65 +81,65 @@ Official Site : Spring.io
  - mark @Autowired on Constructor or Method
    (After Spring 4.3, @Autowired annotation on constructor is no longer needed 
     if the target bean only defines on constructor to begin with.)
- - ¾î¶°ÇÑ ¸Ş¼­µå¿¡µµ @Autowired annotation »ç¿ë °¡´É
+ - ì–´ë– í•œ ë©”ì„œë“œì—ë„ @Autowired annotation ì‚¬ìš© ê°€ëŠ¥
 ### Default Baen ID
  - the class name, make first letter lower-case
 
 ### Which spring injection type should I use?
  - Whatever you want. But stay consistent throughout your project.
 
-### @Autowired¸¦ »ç¿ëÇÒ ¶§ÀÇ ÁÖÀÇÁ¡
- - ¸¸¾à¿¡  ±¸ÇöÇÏ´Â BeanÀÌ ÇÑ°³ ÀÌ»óÀÌ¶ó¸é Exception ¹ß»ıÇÑ´Ù
- - @Qualifier("targetService")¿Í °°ÀÌ Æ¯Á¤ BeanÀ» ¼±ÅÃÇØÁÖ¾î¾ß ÇÑ´Ù.
+### @Autowiredë¥¼ ì‚¬ìš©í•  ë•Œì˜ ì£¼ì˜ì 
+ - ë§Œì•½ì—  êµ¬í˜„í•˜ëŠ” Beanì´ í•œê°œ ì´ìƒì´ë¼ë©´ Exception ë°œìƒí•œë‹¤
+ - @Qualifier("targetService")ì™€ ê°™ì´ íŠ¹ì • Beanì„ ì„ íƒí•´ì£¼ì–´ì•¼ í•œë‹¤.
 
-### @Qualifier´Â »ı¼ºÀÚ, Setter, Field Injection°ú °°ÀÌ ¾îµğµç »ç¿ë °¡´ÉÇÏ´Ù.
+### @QualifierëŠ” ìƒì„±ì, Setter, Field Injectionê³¼ ê°™ì´ ì–´ë””ë“  ì‚¬ìš© ê°€ëŠ¥í•˜ë‹¤.
 
-### Qualifier µÚ¿¡ ³×ÀÌ¹Ö ±ÔÄ¢
- - Ã¹±ÛÀÚ°¡ ÇÑ±ÛÀÚ¸¸ ´ë¹®ÀÚ¸é ¼Ò¹®ÀÚ·Î º¯°æ FortuneService => @Qualifier("fortuneService")
- - µÎ±ÛÀÚ ÀÌ»óÀÇ ´ë¹®ÀÚ·Î ½ÃÀÛÇÏ´Â °æ¿ì RESTService => @Qualifier("RESTService")
+### Qualifier ë’¤ì— ë„¤ì´ë° ê·œì¹™
+ - ì²«ê¸€ìê°€ í•œê¸€ìë§Œ ëŒ€ë¬¸ìë©´ ì†Œë¬¸ìë¡œ ë³€ê²½ FortuneService => @Qualifier("fortuneService")
+ - ë‘ê¸€ì ì´ìƒì˜ ëŒ€ë¬¸ìë¡œ ì‹œì‘í•˜ëŠ” ê²½ìš° RESTService => @Qualifier("RESTService")
 
-### Qualifier¸¦ »ı¼ºÀÚ¿¡ »ç¿ëÇÏ´Â °æ¿ì
- - »ı¼ºÀÚÀÇ Ã¹Â° ÆÄ¶ó¹ÌÅÍ·Î Å¬·¡½º¸íÀ» Àû¾îÁà¾ß ÇÑ´Ù
+### Qualifierë¥¼ ìƒì„±ìì— ì‚¬ìš©í•˜ëŠ” ê²½ìš°
+ - ìƒì„±ìì˜ ì²«ì§¸ íŒŒë¼ë¯¸í„°ë¡œ í´ë˜ìŠ¤ëª…ì„ ì ì–´ì¤˜ì•¼ í•œë‹¤
  - Ex:
 
  @Autowired
  public TennisCoach(@Qualifier("randomFortuneService") FortuneService theFortuneService){ }
 
-### PropertiesÀÇ °ªµéÀ» ÁÖÀÔÇÏ´Â ¹æ¹ı
+### Propertiesì˜ ê°’ë“¤ì„ ì£¼ì…í•˜ëŠ” ë°©ë²•
  
- 1. properties¿¡ °ª ±âÀÔ
+ 1. propertiesì— ê°’ ê¸°ì…
   src/sport.properties
 
   foot.email=myEmail@email.com
   foo.team=SillyJava
  
- 2. XML config fileÀ» ÅëÇÏ¿© ÀĞ¾îµéÀÌ±â
+ 2. XML config fileì„ í†µí•˜ì—¬ ì½ì–´ë“¤ì´ê¸°
   applicationContext.xml
 
   <context:property-placeholder location="classpath:sport.properties"/>
 
- 3. ÁÖÀÔÇÏ±â  
+ 3. ì£¼ì…í•˜ê¸°  
   @Value("@{foo.email}")
   private String email;
 
 
 #Bean lifecycle(Annotation)
- - @Scope("prototype") ¿Í °°Àº ¹æ½ÄÀ¸·Î ºÙ¿© ÁÙ ¼öÀÖ´Ù
- - ±âº»ÀûÀ¸·Î´Â ½Ì±ÛÅæÀÌ´Ù
- - »ı¼º(@PostConstruct), Á¾·á(@PreDestroy)¸¦ ºÙÀÎ ¸Ş¼­µå¸¦ Á¤ÀÇÇÏ¿© µ¿ÀÛÀ» ½ÃÅ³ ¼ö ÀÖ´Ù
- - ¸¸¾à Prototype Scope¸¦ »ç¿ëÇÒ °æ¿ì¿¡´Â @PreDestory°¡ È£ÃâµÇÁö ¾Ê´Â´Ù
+ - @Scope("prototype") ì™€ ê°™ì€ ë°©ì‹ìœ¼ë¡œ ë¶™ì—¬ ì¤„ ìˆ˜ìˆë‹¤
+ - ê¸°ë³¸ì ìœ¼ë¡œëŠ” ì‹±ê¸€í†¤ì´ë‹¤
+ - ìƒì„±(@PostConstruct), ì¢…ë£Œ(@PreDestroy)ë¥¼ ë¶™ì¸ ë©”ì„œë“œë¥¼ ì •ì˜í•˜ì—¬ ë™ì‘ì„ ì‹œí‚¬ ìˆ˜ ìˆë‹¤
+ - ë§Œì•½ Prototype Scopeë¥¼ ì‚¬ìš©í•  ê²½ìš°ì—ëŠ” @PreDestoryê°€ í˜¸ì¶œë˜ì§€ ì•ŠëŠ”ë‹¤
 
 #Spring Configuration with Java Code(no xml)
- - @BeanÀ» ºÙ¿©Áà¼­ ½ºÇÁ¸µÀÌ ¾Æ´Ñ ÀÏ¹İ ÀÚ¹Ù Å¬·¡½º¸¦ ½ºÇÁ¸µ¿¡¼­ »ç¿ë ÇÒ ¼ö ÀÖµµ·Ï WrapÇÏ´Â °ÍÀÌ °¡´ÉÇÏ´Ù
+ - @Beanì„ ë¶™ì—¬ì¤˜ì„œ ìŠ¤í”„ë§ì´ ì•„ë‹Œ ì¼ë°˜ ìë°” í´ë˜ìŠ¤ë¥¼ ìŠ¤í”„ë§ì—ì„œ ì‚¬ìš© í•  ìˆ˜ ìˆë„ë¡ Wrapí•˜ëŠ” ê²ƒì´ ê°€ëŠ¥í•˜ë‹¤
 
-#Properties »ç¿ë
- - src/Æú´õ ¹Ø¿¡ ÆÄÀÏÀ» »ı¼º(sport.properties)ÇØ ³õ°í,
-   @PropertySource("classpath:sport.properties")¿Í °°ÀÌ ÇÏ¸é Value°ªÀ» ¿ÜºÎ¿¡¼­ ºÒ·¯¿Í »ç¿ëÇÏ´Â °ÍÀÌ °¡´ÉÇÏ´Ù
- - °ªÀÇ »ç¿ëÀº Å¬·¡½º ³»¿¡¼­
+#Properties ì‚¬ìš©
+ - src/í´ë” ë°‘ì— íŒŒì¼ì„ ìƒì„±(sport.properties)í•´ ë†“ê³ ,
+   @PropertySource("classpath:sport.properties")ì™€ ê°™ì´ í•˜ë©´ Valueê°’ì„ ì™¸ë¶€ì—ì„œ ë¶ˆëŸ¬ì™€ ì‚¬ìš©í•˜ëŠ” ê²ƒì´ ê°€ëŠ¥í•˜ë‹¤
+ - ê°’ì˜ ì‚¬ìš©ì€ í´ë˜ìŠ¤ ë‚´ì—ì„œ
    @Value("${foo.email}")
    private String emaili;
-   ¿Í °°Àº ¹æ½ÄÀ¸·Î »ç¿ë °¡´ÉÇÏ´Ù
- - ¸¸¾à ½ºÇÁ¸µ ¹öÀü 4.2 ÀÌÇÏ¶ó¸é ¾Æ·¡ÀÇ ¸Ş¼Òµå¸¦ @ConfigurationÆÄÀÏ¿¡ ³Ö¾îÁÖ¾î¾ß ÇÑ´Ù
+   ì™€ ê°™ì€ ë°©ì‹ìœ¼ë¡œ ì‚¬ìš© ê°€ëŠ¥í•˜ë‹¤
+ - ë§Œì•½ ìŠ¤í”„ë§ ë²„ì „ 4.2 ì´í•˜ë¼ë©´ ì•„ë˜ì˜ ë©”ì†Œë“œë¥¼ @ConfigurationíŒŒì¼ì— ë„£ì–´ì£¼ì–´ì•¼ í•œë‹¤
 
 @Bean
 public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceHolderConfigurer() {
@@ -148,30 +148,30 @@ public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceHolderCon
 
 
 # Component-Scan
- - <context:component-scan base-package="com.neighborpil.springdemo" />¿Í °°ÀÌ ¼³Á¤ÇØ µÎ¾úÀ» °æ¿ì
-   ÇÏÀ§ ÆĞÅ°Áöµµ Àç±ÍÀûÀ¸·Î ¸ğµÎ °Ë»öÇÑ´Ù
+ - <context:component-scan base-package="com.neighborpil.springdemo" />ì™€ ê°™ì´ ì„¤ì •í•´ ë‘ì—ˆì„ ê²½ìš°
+   í•˜ìœ„ íŒ¨í‚¤ì§€ë„ ì¬ê·€ì ìœ¼ë¡œ ëª¨ë‘ ê²€ìƒ‰í•œë‹¤
 
 # @RequestMapping("/path")
- - Å¬·¡½º¿¡ »ç¿ëÇÒ °æ¿ì ³»ºÎÀÇ ¸ğµç ¸Ş¼ÒµåÀÇ ¸ÅÇÎ¿¡ "/path"°¡ ºÙ´Â´Ù
- - ¸Ş¼Òµå¿¡ »ç¿ëÇÏ¿© ÁÖ¼Ò¿¡ ¸ÅÇÎÇÑ´Ù
+ - í´ë˜ìŠ¤ì— ì‚¬ìš©í•  ê²½ìš° ë‚´ë¶€ì˜ ëª¨ë“  ë©”ì†Œë“œì˜ ë§¤í•‘ì— "/path"ê°€ ë¶™ëŠ”ë‹¤
+ - ë©”ì†Œë“œì— ì‚¬ìš©í•˜ì—¬ ì£¼ì†Œì— ë§¤í•‘í•œë‹¤
 
 # @RequestParam("variableName") String name
- - formÀÇ inputÀ» µ¥ÀÌÅÍ ¹ÙÀÎµù ½ÃÅ²´Ù.
- - jspÆäÀÌÁöÀÇ inputÅÂ±×ÀÇ name°ú ÄÁÆ®·Ñ·¯ ³» ÇÔ¼öÀÇ variableNameÀÌ °°¾Æ¾ß ÇÑ´Ù.
+ - formì˜ inputì„ ë°ì´í„° ë°”ì¸ë”© ì‹œí‚¨ë‹¤.
+ - jspí˜ì´ì§€ì˜ inputíƒœê·¸ì˜ nameê³¼ ì»¨íŠ¸ë¡¤ëŸ¬ ë‚´ í•¨ìˆ˜ì˜ variableNameì´ ê°™ì•„ì•¼ í•œë‹¤.
 
 # Spring MVC FormTag
- - Taglib¸¦ ºÙ¿©ÁÖ¾î¾ß ÇÑ´Ù
+ - Taglibë¥¼ ë¶™ì—¬ì£¼ì–´ì•¼ í•œë‹¤
    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %> 
 
- - form:form : ¸ŞÀÎ Æû ÄÁÅ×ÀÌ³Ê
+ - form:form : ë©”ì¸ í¼ ì»¨í…Œì´ë„ˆ
  - form:input : text field
- - form:textarea : ¸ÖÆ¼¶óÀÎ ÅØ½ºÆ® ÇÊµå
- - form:checkbox(es) : Ã¼Å©¹Ú½º
- - form:radiobutton(s) : ¶óµğ¿À ¹öÆ°
- - form:select : µå¶ø´Ù¿î¸®½ºÆ®
+ - form:textarea : ë©€í‹°ë¼ì¸ í…ìŠ¤íŠ¸ í•„ë“œ
+ - form:checkbox(es) : ì²´í¬ë°•ìŠ¤
+ - form:radiobutton(s) : ë¼ë””ì˜¤ ë²„íŠ¼
+ - form:select : ë“œëë‹¤ìš´ë¦¬ìŠ¤íŠ¸
 
 # Jstl
- - <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> ¸¦ Çìµå¿¡ 
+ - <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> ë¥¼ í—¤ë“œì— 
  - <c:forEach var="temp" items="${operatingSystemOptions}">
      <li>${temp}</li>
    </c:forEach>
@@ -181,16 +181,16 @@ public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceHolderCon
  - @Min: Must be a number >= value
  - @Max: Must be a number <= value
  - @Size: Size must match the given size
- - @Pattern: Á¤±Ô½Ä¿¡ ÀÏÄ¡
+ - @Pattern: ì •ê·œì‹ì— ì¼ì¹˜
  - @Future / @Past : Date must be in future or past of given date
 
 # Spring MVC Validation
  - Annotation Validator
  - http://hibernate.org/validator/
- - Spring MVC ValidationÀ» »ç¿ëÇÒ °æ¿ì, BindingResult ÆÄ¶ó¹ÌÅÍÀÇ À§Ä¡´Â ¹İµå½Ã ModelAttribute ÆÄ¶ó¹ÌÅÍ µÚ¿¡ À§Ä¡ÇØ¾ß ÇÑ´Ù.
+ - Spring MVC Validationì„ ì‚¬ìš©í•  ê²½ìš°, BindingResult íŒŒë¼ë¯¸í„°ì˜ ìœ„ì¹˜ëŠ” ë°˜ë“œì‹œ ModelAttribute íŒŒë¼ë¯¸í„° ë’¤ì— ìœ„ì¹˜í•´ì•¼ í•œë‹¤.
 
 # @InitBinder
- - ¼³Á¤À» ÇØÁÖ¸é ÇØ´ç ÄÁÆ®·Ñ·¯ ³»ÀÇ ¸Ş¼ÒµåµéÀÌ È£ÃâµÉ ¶§¿¡ ÆÄ¶ó¹ÌÅÍ°¡ ÀüºÎ ¾ÕµÚ·Î TrimµÇ¾î È£ÃâµÈ´Ù
+ - ì„¤ì •ì„ í•´ì£¼ë©´ í•´ë‹¹ ì»¨íŠ¸ë¡¤ëŸ¬ ë‚´ì˜ ë©”ì†Œë“œë“¤ì´ í˜¸ì¶œë  ë•Œì— íŒŒë¼ë¯¸í„°ê°€ ì „ë¶€ ì•ë’¤ë¡œ Trimë˜ì–´ í˜¸ì¶œëœë‹¤
 
 ```
 	@InitBinder
@@ -201,11 +201,11 @@ public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceHolderCon
 	}
 ```
 
-# Ä¿½ºÅÒ ¿¡·¯ ¸Ş½ÃÁö º¸¿©ÁÖ±â
+# ì»¤ìŠ¤í…€ ì—ëŸ¬ ë©”ì‹œì§€ ë³´ì—¬ì£¼ê¸°
 
- - ÀÚ¹Ù srcÆú´õ ¹Ø¿¡ resources µğ·ºÅä¸®¸¦ »ı¼ºÇÏ°í
- - messages.properties ÆÄÀÏÀ» »ı¼ºÇÑ´Ù.
- - ±× ¾È¿¡ typeMismatch.customer.freePasses=Invalid Number   ¶ó°í Àû¾îÁØ´Ù
+ - ìë°” srcí´ë” ë°‘ì— resources ë””ë ‰í† ë¦¬ë¥¼ ìƒì„±í•˜ê³ 
+ - messages.properties íŒŒì¼ì„ ìƒì„±í•œë‹¤.
+ - ê·¸ ì•ˆì— typeMismatch.customer.freePasses=Invalid Number   ë¼ê³  ì ì–´ì¤€ë‹¤
 
 ```
 	<!-- Load custom message resources -->	
@@ -215,27 +215,27 @@ public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceHolderCon
 	</bean>
 ```
 
-# Validation ¿¹Á¦
+# Validation ì˜ˆì œ
 
 ```
-	@NotNull(message="ÀÌ(°¡) ÇÊ¿äÇÕ´Ï´Ù.")
-	@Size(min=1, message="ÀÌ(°¡) ÇÊ¿äÇÕ´Ï´Ù.")
+	@NotNull(message="ì´(ê°€) í•„ìš”í•©ë‹ˆë‹¤.")
+	@Size(min=1, message="ì´(ê°€) í•„ìš”í•©ë‹ˆë‹¤.")
 	private String lastName;
 	
-	@NotNull(message="ÀÌ(°¡) ÇÊ¿äÇÕ´Ï´Ù")
-	@Min(value=0, message="0º¸´Ù Å« ¼ö¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.")
-	@Max(value=10, message="10º¸´Ù ÀÛÀº ¼ö¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.")
+	@NotNull(message="ì´(ê°€) í•„ìš”í•©ë‹ˆë‹¤")
+	@Min(value=0, message="0ë³´ë‹¤ í° ìˆ˜ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš”.")
+	@Max(value=10, message="10ë³´ë‹¤ ì‘ì€ ìˆ˜ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš”.")
 	private Integer freePasses;
 	
-	@NotNull(message="À»(¸¦) ÀÔ·ÂÇØ ÁÖ¼¼¿ä.")
-	@Pattern(regexp="^[\\w]{5}", message="5ÀÚ¸®ÀÇ ¼ıÀÚ ¶Ç´Â ¹®ÀÚ¸¸ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.")
+	@NotNull(message="ì„(ë¥¼) ì…ë ¥í•´ ì£¼ì„¸ìš”.")
+	@Pattern(regexp="^[\\w]{5}", message="5ìë¦¬ì˜ ìˆ«ì ë˜ëŠ” ë¬¸ìë§Œ ì…ë ¥í•´ ì£¼ì„¸ìš”.")
 	private String postalCode;
 
 ```
 
 
 # CustomValidator
- - @interface¸¦ »ı¼º
+ - @interfaceë¥¼ ìƒì„±
 
 ```
 
@@ -260,7 +260,7 @@ public @interface CourseCode {
 
 ```
 
- - ConstraintValidator¸¦ ±¸Çö
+ - ConstraintValidatorë¥¼ êµ¬í˜„
 
 ```
 
@@ -288,7 +288,7 @@ public class CourseCodeContraintValidator implements ConstraintValidator<CourseC
 
 ```
 
- - »ç¿ë
+ - ì‚¬ìš©
 
 ```
 
@@ -300,18 +300,18 @@ public class CourseCodeContraintValidator implements ConstraintValidator<CourseC
 
 
 # Object-To-Relational Mapping(ORM)
- - ÀÚ¹Ù °´Ã¼¿Í DB Å×ÀÌºíÀ» ¸ÅÄª½ÃÄÑ ÁØ´Ù
- - Äõ¸®¹®À» ¸¹ÀÌ ÁÙÀÏ ¼ö ÀÖ´Ù
+ - ìë°” ê°ì²´ì™€ DB í…Œì´ë¸”ì„ ë§¤ì¹­ì‹œì¼œ ì¤€ë‹¤
+ - ì¿¼ë¦¬ë¬¸ì„ ë§ì´ ì¤„ì¼ ìˆ˜ ìˆë‹¤
 
-# Hibernate ORM ´Ù¿î·Îµå ÆäÀÌÁö
+# Hibernate ORM ë‹¤ìš´ë¡œë“œ í˜ì´ì§€
  - http://hibernate.org/orm/
 
 # Entity Class
- - database¿¡ ¸ÅÇÎµÈ ÀÚ¹Ù Å¬·¡½º
+ - databaseì— ë§¤í•‘ëœ ìë°” í´ë˜ìŠ¤
 
 # Fetch / Eager
- - Eager: ¸ğµç µ¥ÀÌÅÍ¸¦ °¡Áö°í ¿À´Â °Í
- - Fetch: ¿äÃ»ÇÑ °Í¸¸ °¡Á®¿È(Prefered)
+ - Eager: ëª¨ë“  ë°ì´í„°ë¥¼ ê°€ì§€ê³  ì˜¤ëŠ” ê²ƒ
+ - Fetch: ìš”ì²­í•œ ê²ƒë§Œ ê°€ì ¸ì˜´(Prefered)
 
 # Default Fetch Type
  - @OneToOne : FetchType.EAGER
@@ -321,21 +321,21 @@ public class CourseCodeContraintValidator implements ConstraintValidator<CourseC
 
 
 # @Transactional
- - ÀÚµ¿À¸·Î Æ®·£Àè¼Ç Ã³¸®
+ - ìë™ìœ¼ë¡œ íŠ¸ëœì­ì…˜ ì²˜ë¦¬
  - 
 
 # @Repositoy
- - DAO implementations¸¦ ³ªÅ¸³¿
+ - DAO implementationsë¥¼ ë‚˜íƒ€ëƒ„
 
 
-# ¸®µğ¸¯ÆÃ
+# ë¦¬ë””ë¦­íŒ…
 
 <% response.sendRedirect("customer/list"); %>
 
-# @GetMapping, @PostMapping(½ºÇÁ¸µ 4.3ÀÌ»ó)
- - ±âÁ¸¿¡´Â RequestMethod¸¦ ÁöÁ¤ÇÏ´Â ¹æ½Ä(GET, POST)À¸·Î ÇÒ ¼ö ÀÖ¾ú´Ù.
+# @GetMapping, @PostMapping(ìŠ¤í”„ë§ 4.3ì´ìƒ)
+ - ê¸°ì¡´ì—ëŠ” RequestMethodë¥¼ ì§€ì •í•˜ëŠ” ë°©ì‹(GET, POST)ìœ¼ë¡œ í•  ìˆ˜ ìˆì—ˆë‹¤.
    RequestMapping(path="/path" method="RequestMethod.GET")
-   ÀÌ ¹æ½ÄÀ¸·Î ±æ¾îÁö¹Ç·Î @GetMapping, @PostMapping°ú °°Àº ¹æ½ÄÀ¸·Î °£°áÇÏ°Ô »ç¿ë °¡´ÉÇÏ´Ù
+   ì´ ë°©ì‹ìœ¼ë¡œ ê¸¸ì–´ì§€ë¯€ë¡œ @GetMapping, @PostMappingê³¼ ê°™ì€ ë°©ì‹ìœ¼ë¡œ ê°„ê²°í•˜ê²Œ ì‚¬ìš© ê°€ëŠ¥í•˜ë‹¤
  
 # Aspect Oriented Programming(AOP)
  - Cross-Cutting Concerns
@@ -353,53 +353,53 @@ public class CourseCodeContraintValidator implements ConstraintValidator<CourseC
  - Around advice: run before and after method
 
 # Weaving
- - advised object¸¦ »ı¼ºÇÏ¿© aspect¸¦ target object¿¡ ¿¬°áÇÏ´Â °Í
+ - advised objectë¥¼ ìƒì„±í•˜ì—¬ aspectë¥¼ target objectì— ì—°ê²°í•˜ëŠ” ê²ƒ
  - Compile-time, run-time(slowest)
 
 # AOP Framework
- - Spring AOP : ½ºÇÁ¸µ¿¡¼­ Áö¿øÇÏ´Â °Í, Ä³½Ì, Æ®·£Àè¼Ç µî ½ºÇÁ¸µ ±¸µ¿¿¡ ÇÊ¿äÇÑ°Í Áö¿ø, run-time
- - AspectJ : Ä¿½ºÅÒ AOP Áö¿ø °¡´É,
+ - Spring AOP : ìŠ¤í”„ë§ì—ì„œ ì§€ì›í•˜ëŠ” ê²ƒ, ìºì‹±, íŠ¸ëœì­ì…˜ ë“± ìŠ¤í”„ë§ êµ¬ë™ì— í•„ìš”í•œê²ƒ ì§€ì›, run-time
+ - AspectJ : ì»¤ìŠ¤í…€ AOP ì§€ì› ê°€ëŠ¥,
 
 
-# AspectJ Weaver ´Ù¿î·Îµå maven ÁÖ¼Ò
+# AspectJ Weaver ë‹¤ìš´ë¡œë“œ maven ì£¼ì†Œ
  - https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
 
-# AOP¸¦ Àû¿ëÇÏ´Â ½ÃÁ¡
- - PointCut: A predicate expression for where advice should be applied, Á¶°ÇÀÌ ¸ÂÀ» ¶§ advice°¡ Àû¿ëµÈ´À ºÎºĞ
+# AOPë¥¼ ì ìš©í•˜ëŠ” ì‹œì 
+ - PointCut: A predicate expression for where advice should be applied, ì¡°ê±´ì´ ë§ì„ ë•Œ adviceê°€ ì ìš©ëœëŠ ë¶€ë¶„
  - execution(modifiers-pattern? return-type-pattern declaring-type-pattern? method-name-pattern(param-pattern) throws-pattern?)
-   ?°¡ ÀÖ´Â °ÍÀº ¿É¼ÇÀ¸·Î ¾ø¾îµµ µÈ´Ù
- - *(whildcard, matches on everything)°¡ »ç¿ë °¡´ÉÇÏ´Ù
+   ?ê°€ ìˆëŠ” ê²ƒì€ ì˜µì…˜ìœ¼ë¡œ ì—†ì–´ë„ ëœë‹¤
+ - *(whildcard, matches on everything)ê°€ ì‚¬ìš© ê°€ëŠ¥í•˜ë‹¤
 
  
 # Execution Pointcut Examples
 
- - @Before("execution(public void add*())") : add·Î ½ÃÀÛÇÏ´Â ¸ğµç ÇÔ¼ö¿¡ Àû¿ë
- - @Before("execution(* * processCreditCard*())") : modifier¿¡ »ó°ü ¾øÀÌ ¸®ÅÏÅ¸ÀÔÀÌ ¾î¶»µç processCreditCard·Î ½ÃÀÛÇÏ´Â ¸Ş¼Òµå¿¡ Àû¿ë
+ - @Before("execution(public void add*())") : addë¡œ ì‹œì‘í•˜ëŠ” ëª¨ë“  í•¨ìˆ˜ì— ì ìš©
+ - @Before("execution(* * processCreditCard*())") : modifierì— ìƒê´€ ì—†ì´ ë¦¬í„´íƒ€ì…ì´ ì–´ë–»ë“  processCreditCardë¡œ ì‹œì‘í•˜ëŠ” ë©”ì†Œë“œì— ì ìš©
 
 # AspectJ Parameter Pattern Wildcards
- - () : ÆÄ¶ó¹ÌÅÍ ¾øÀ½
- - (*) : ÇÏ³ªÀÌ»óÀÇ ÆÄ¶ó¹ÌÅÍ
- - (..) :  ¾ø°Å³ª ÇÏ³ª ÀÌ»óÀÇ ÆÄ¶ó¹ÌÅÍ
+ - () : íŒŒë¼ë¯¸í„° ì—†ìŒ
+ - (*) : í•˜ë‚˜ì´ìƒì˜ íŒŒë¼ë¯¸í„°
+ - (..) :  ì—†ê±°ë‚˜ í•˜ë‚˜ ì´ìƒì˜ íŒŒë¼ë¯¸í„°
 
- - ¿¹Á¦:
+ - ì˜ˆì œ:
 @Before("execution(public void addAccount())")                                                                                                    
 @Before("execution(void add*())")                                                                                                                 
-@Before("execution(public void addAccount(..))") // 0°³ ¶Ç´Â 1°³ ÀÌ»óÀÇ ¸ğµç ÆÄ¶ó¹ÌÅÍ                                                                          
-@Before("execution(* add*())") // ¸ğµç ¸®ÅÏÅ¸ÀÔ, add·Î ½ÃÀÛÇÏ´Â ¸ğµç ÇÔ¼ö, ÆÄ¶ó¹ÌÅÍ´Â ¾øÀ½                                                                              
-@Before("execution(void add*(Account))") // ÆÄ¶ó¹ÌÅÍ°¡ ÀüÃ¼ °æ·Î°¡ ¾Æ´Ï±â ¶§¹®¿¡ ¿À·ù ¹ß»ı                                                                              
-@Before("execution(void add*(com.neighborpil.aopdemo.Account))") // AccountÆÄ¶ó¹ÌÅÍ ÇÏ³ª¸¸ ÀÖ´Â ÇÔ¼öÀÌ´Ù                                                         
-@Before("execution(void add*(com.neighborpil.aopdemo.Account, ..))") // Account ÆÄ¶ó¹ÌÅÍ¸¦ ¹İµå½Ã Æ÷ÇÔÇÏ°í, ³ª¸ÓÁö ÆÄ¶ó¹ÌÅÍ´Â ÀÖ¾îµµ µÇ°í ¾ø¾îµµ µÊ                              
-@Before("execution(* com.neighborpil.aopdemo.dao.*.*(..))") // ¾î¶°ÇÑ modifier, ¾î¶°ÇÑ ¸®ÅÏÅ¸ÀÔ, com.neighborpil.aopdemo.daoÆĞÅ°Áö ³» ¾î¶°ÇÑ Å¬·¡½º ³»¿¡ ¾î¶°ÇÑ ¸Ş¼Òµå, ¾î¶°ÇÑ ÆÄ¶ó¹ÌÅÍ
+@Before("execution(public void addAccount(..))") // 0ê°œ ë˜ëŠ” 1ê°œ ì´ìƒì˜ ëª¨ë“  íŒŒë¼ë¯¸í„°                                                                          
+@Before("execution(* add*())") // ëª¨ë“  ë¦¬í„´íƒ€ì…, addë¡œ ì‹œì‘í•˜ëŠ” ëª¨ë“  í•¨ìˆ˜, íŒŒë¼ë¯¸í„°ëŠ” ì—†ìŒ                                                                              
+@Before("execution(void add*(Account))") // íŒŒë¼ë¯¸í„°ê°€ ì „ì²´ ê²½ë¡œê°€ ì•„ë‹ˆê¸° ë•Œë¬¸ì— ì˜¤ë¥˜ ë°œìƒ                                                                              
+@Before("execution(void add*(com.neighborpil.aopdemo.Account))") // AccountíŒŒë¼ë¯¸í„° í•˜ë‚˜ë§Œ ìˆëŠ” í•¨ìˆ˜ì´ë‹¤                                                         
+@Before("execution(void add*(com.neighborpil.aopdemo.Account, ..))") // Account íŒŒë¼ë¯¸í„°ë¥¼ ë°˜ë“œì‹œ í¬í•¨í•˜ê³ , ë‚˜ë¨¸ì§€ íŒŒë¼ë¯¸í„°ëŠ” ìˆì–´ë„ ë˜ê³  ì—†ì–´ë„ ë¨                              
+@Before("execution(* com.neighborpil.aopdemo.dao.*.*(..))") // ì–´ë– í•œ modifier, ì–´ë– í•œ ë¦¬í„´íƒ€ì…, com.neighborpil.aopdemo.daoíŒ¨í‚¤ì§€ ë‚´ ì–´ë– í•œ í´ë˜ìŠ¤ ë‚´ì— ì–´ë– í•œ ë©”ì†Œë“œ, ì–´ë– í•œ íŒŒë¼ë¯¸í„°
 
 
 
 # Pointcut Expression Param Type
- - @Before("execution(* addAccount(com.neighborpil.aopdemo.Account))") // com.neighborpil.aopdemo.Account´Â ÆÄ¶ó¹ÌÅÍÀÇ Å¸ÀÔÀÌ´Ù
+ - @Before("execution(* addAccount(com.neighborpil.aopdemo.Account))") // com.neighborpil.aopdemo.AccountëŠ” íŒŒë¼ë¯¸í„°ì˜ íƒ€ì…ì´ë‹¤
 
-# Pointcut ExpressionÀ» Àç»ç¿ë ÇÏ´Â ¹ı
+# Pointcut Expressionì„ ì¬ì‚¬ìš© í•˜ëŠ” ë²•
  1. creat a pointcut declaration
-  @Pointcut("execution(* com.neighborpil.aopdemo.dao.*.*(..))") // ½ÇÁ¦ pointcut expression
-  private void forDaoPackage() {} // Æ÷ÀÎÆ®ÄÆ ¼±¾ğ ÀÌ¸§(forDaoPackage), ¾î¶°ÇÑ ÀÌ¸§ÀÌ ¿Ã ¼ö ÀÖÀ½
+  @Pointcut("execution(* com.neighborpil.aopdemo.dao.*.*(..))") // ì‹¤ì œ pointcut expression
+  private void forDaoPackage() {} // í¬ì¸íŠ¸ì»· ì„ ì–¸ ì´ë¦„(forDaoPackage), ì–´ë– í•œ ì´ë¦„ì´ ì˜¬ ìˆ˜ ìˆìŒ
 
  2. apply pointcut declaration to advice(s)
   @Before("forDaoPackage()")
@@ -408,7 +408,7 @@ public class CourseCodeContraintValidator implements ConstraintValidator<CourseC
   }
 
 # Combining Pointcut Expression
- - °áÇÕÇØ¼­ »ç¿ë °¡´É
+ - ê²°í•©í•´ì„œ ì‚¬ìš© ê°€ëŠ¥
  - @Before("expressionOne() && expressionTwo()") // AND
  - @Before("expressionOne() || expressionTwo()") // OR
  - @Before("expressionOne() && !expressionTwo()") // NOT
@@ -437,19 +437,19 @@ public void beforeAddAccountAdvice() {
 
 
 # Ordering Aspects
- - add @Order(¼ıÀÚ) annotation
- - Å¬·¡½º¿¡ ºÙÀÎ´Ù
- - ¸¸¾à µ¿ÀÏÇÑ ¼ıÀÚ¸¦ °¡Áö°í ÀÖ´Ù¸é? °°Àº ¼ıÀÚ ³»ºÎ¿¡¼­´Â ½Ã½ºÅÛ¿¡¼­ ¾Ë¾Æ¼­ Ã³¸®ÇÑ´Ù. ´Ù¸¥ ¼ıÀÚ´Â Á¤·Ä¼ø¼­´ë·Î Ã³¸®ÇÑ´Ù
+ - add @Order(ìˆ«ì) annotation
+ - í´ë˜ìŠ¤ì— ë¶™ì¸ë‹¤
+ - ë§Œì•½ ë™ì¼í•œ ìˆ«ìë¥¼ ê°€ì§€ê³  ìˆë‹¤ë©´? ê°™ì€ ìˆ«ì ë‚´ë¶€ì—ì„œëŠ” ì‹œìŠ¤í…œì—ì„œ ì•Œì•„ì„œ ì²˜ë¦¬í•œë‹¤. ë‹¤ë¥¸ ìˆ«ìëŠ” ì •ë ¬ìˆœì„œëŒ€ë¡œ ì²˜ë¦¬í•œë‹¤
 
 @Order(1)
 public class MyCloudLogAspect { ... }
 
 
 # JoinPoint
- - ½ÇÁ¦ ½ÇÇàµÇ´Â ÇÔ¼öÀÇ ÀÌ¸§ ¹× ÆÄ¶ó¹ÌÅÍ¿¡ Á¢±ÙÇÏ±â À§ÇÑ °Í
+ - ì‹¤ì œ ì‹¤í–‰ë˜ëŠ” í•¨ìˆ˜ì˜ ì´ë¦„ ë° íŒŒë¼ë¯¸í„°ì— ì ‘ê·¼í•˜ê¸° ìœ„í•œ ê²ƒ
    public void beforeMethodCAll(JoinPoint theJoinPoint) {}
- - MethodSignature: ÇÔ¼ö ÀÌ¸§
- - joinPoint.getArgs() : ÇÔ¼öÀÇ ÆÄ¶ó¹ÌÅÍ°ª
+ - MethodSignature: í•¨ìˆ˜ ì´ë¦„
+ - joinPoint.getArgs() : í•¨ìˆ˜ì˜ íŒŒë¼ë¯¸í„°ê°’
 
 @Before("com.neighborpil.aopdemo.aspect.AopExpressions.forDaoPackageNoGetterSetter()") //  
 public void beforeAddAccountAdvice(JoinPoint theJoinPoint) {                               
@@ -483,17 +483,17 @@ public void beforeAddAccountAdvice(JoinPoint theJoinPoint) {
 }
 
 # @AfterReturning Advice
- - ¸Ş¼­µå°¡ ¼º°øÀûÀ¸·Î È£ÃâµÇ¾úÀ» ¶§¿¡ 
- - ¹İÈ¯°ª(return value)¸¦ °¡°øÇÒ ÇÊ¿ä°¡ ÀÖÀ» ¶§ »ç¿ë
- - returning="¹İÈ¯°ªÀ» ´ãÀ» º¯¼ö¸í"
-   ÆÄ¶ó¹ÌÅÍ¿¡ µ¿ÀÏÇÑ ÀÌ¸§ÀÇ ¹İÈ¯°ª º¯¼ö¸¦ ¼³Á¤ÇØ¾ß ÇÑ´Ù
- - ÇÔ¼ö¸¦ ¹Ù²Ù¸é¼­ 
+ - ë©”ì„œë“œê°€ ì„±ê³µì ìœ¼ë¡œ í˜¸ì¶œë˜ì—ˆì„ ë•Œì— 
+ - ë°˜í™˜ê°’(return value)ë¥¼ ê°€ê³µí•  í•„ìš”ê°€ ìˆì„ ë•Œ ì‚¬ìš©
+ - returning="ë°˜í™˜ê°’ì„ ë‹´ì„ ë³€ìˆ˜ëª…"
+   íŒŒë¼ë¯¸í„°ì— ë™ì¼í•œ ì´ë¦„ì˜ ë°˜í™˜ê°’ ë³€ìˆ˜ë¥¼ ì„¤ì •í•´ì•¼ í•œë‹¤
+ - í•¨ìˆ˜ë¥¼ ë°”ê¾¸ë©´ì„œ 
 
 // add a new advice for @AfterReturning on the findAccounts method                           
 @AfterReturning(                                                                             
 		pointcut="execution(* com.neighborpil.aopdemo.dao.AccountDAO.findAccounts(..))",     
-		returning="result")                                                             // returningÀÇ °ª°ú     
-public void afterReturningFindAccountsAdvice(JoinPoint theJoinPoint, List<Account> result){     // List<Account>ÀÇ ÆÄ¶ó¹ÌÅÍ º¯¼ö¸í result°¡ µ¿ÀÏÇØ¾ßÇÔ
+		returning="result")                                                             // returningì˜ ê°’ê³¼     
+public void afterReturningFindAccountsAdvice(JoinPoint theJoinPoint, List<Account> result){     // List<Account>ì˜ íŒŒë¼ë¯¸í„° ë³€ìˆ˜ëª… resultê°€ ë™ì¼í•´ì•¼í•¨
 	                                                                                         
 	// print out which method we are advising on                                             
 	String method = theJoinPoint.getSignature().toShortString();                             
@@ -523,10 +523,10 @@ private void convertAccountNamesToUpperCase(List<Account> result) {
 
 
 # @AfterThrowing Advice
- - main methodÀÇ exeception È£Ãâ ÀÌÀü¿¡ È£Ãâ
+ - main methodì˜ exeception í˜¸ì¶œ ì´ì „ì— í˜¸ì¶œ
  - Use Cases:
-  + ¿¹¿ÜÃ³¸® ·Î±ë
-  + ¿¹¿Ü °Ë»ç
+  + ì˜ˆì™¸ì²˜ë¦¬ ë¡œê¹…
+  + ì˜ˆì™¸ ê²€ì‚¬
   + Notify DevOps team via email or SMS
 
 @AfterThrowing(                                                                               
@@ -545,12 +545,12 @@ public void afterThrowingFindAccountAdvice(
 } 
 
 # @After(finally) Advice
- - main mehtod°¡ Á¤»ó È£Ãâ ¶Ç´Â Exception ¹ß»ı¿¡ »ó°ü¾÷ÀÌ È£Ãâ
+ - main mehtodê°€ ì •ìƒ í˜¸ì¶œ ë˜ëŠ” Exception ë°œìƒì— ìƒê´€ì—…ì´ í˜¸ì¶œ
  - Use Cases:
-  + ¿¹¿ÜÃ³¸® ·Î±ë
-  + ¿¹¿Ü °Ë»ç
- - ¿¹¿Ü ÀÚÃ¼¿¡´Â Á¢±Ù ºÒ°¡´É (µû¶ó¼­ Ãß°¡ ¿¹¿ÜÃ³¸® @AfterThrowing)Á¤ÀÇ ÇÊ¿ä)
- - ·Î±ë Ã³¸®ÇÏ±â¿¡´Â ¿©±â°¡ °¡Àå ÁÁÀ½
+  + ì˜ˆì™¸ì²˜ë¦¬ ë¡œê¹…
+  + ì˜ˆì™¸ ê²€ì‚¬
+ - ì˜ˆì™¸ ìì²´ì—ëŠ” ì ‘ê·¼ ë¶ˆê°€ëŠ¥ (ë”°ë¼ì„œ ì¶”ê°€ ì˜ˆì™¸ì²˜ë¦¬ @AfterThrowing)ì •ì˜ í•„ìš”)
+ - ë¡œê¹… ì²˜ë¦¬í•˜ê¸°ì—ëŠ” ì—¬ê¸°ê°€ ê°€ì¥ ì¢‹ìŒ
 
 @After("execution(* com.neighborpil.aopdemo.dao.AccountDAO.findAccounts(..))")       
 public void afterFinallyFindAccountsAdvice(JoinPoint theJoinPoint) {                 
@@ -563,14 +563,14 @@ public void afterFinallyFindAccountsAdvice(JoinPoint theJoinPoint) {
 }
 
 # @Arount Advice
- - ÇÔ¼ö È£Ãâ ÀüÈÄ¿¡ È£Ãâ
+ - í•¨ìˆ˜ í˜¸ì¶œ ì „í›„ì— í˜¸ì¶œ
  - Use Cases:
-  + ¿¹¿ÜÃ³¸® ·Î±ë
-  + ¿¹¿Ü °Ë»ç
+  + ì˜ˆì™¸ì²˜ë¦¬ ë¡œê¹…
+  + ì˜ˆì™¸ ê²€ì‚¬
   + Security
   + Pre-processing and Post-processing data
-  + Instrumentation / profiling code : ±¸µ¿ ½Ã°£ Ã¼Å©
- - proceeding join pointÂüÁ¶ °¡´É, 
+  + Instrumentation / profiling code : êµ¬ë™ ì‹œê°„ ì²´í¬
+ - proceeding join pointì°¸ì¡° ê°€ëŠ¥, 
 
 @Around("execution(* com.neighborpil.aopdemo.service.*.*(..))")                                
 public Object aroundGetFortune(ProceedingJoinPoint theProceedingJoinPoint) throws Throwable{   
@@ -595,8 +595,8 @@ public Object aroundGetFortune(ProceedingJoinPoint theProceedingJoinPoint) throw
 	return result;                                                                             
 }
 
-# @Around Advice¿¡¼­ÀÇ ¿¹¿ÜÃ³¸®
- 1. ÀÚÃ¼ÀûÀ¸·Î Ã³¸®°¡´É
+# @Around Adviceì—ì„œì˜ ì˜ˆì™¸ì²˜ë¦¬
+ 1. ìì²´ì ìœ¼ë¡œ ì²˜ë¦¬ê°€ëŠ¥
 
 @Around("execution(* com.neighborpil.aopdemo.service.*.*(..))")                                
 public Object aroundGetFortune(ProceedingJoinPoint theProceedingJoinPoint) throws Throwable{   
@@ -614,7 +614,7 @@ public Object aroundGetFortune(ProceedingJoinPoint theProceedingJoinPoint) throw
 		result = theProceedingJoinPoint.proceed();                                             
 	} catch (Throwable e) {                                                                    
 		// got the exception                                                                   
-		myLogger.warning(e.getMessage()); // ¿©±â¼­ ¿¹¿ÜÃ³¸® ÇÏ±â ¶§¹®¿¡ ¸ŞÀÎ ¸Ş¼Òµå´Â ¿¹¿Ü¸¦ ¾ËÁö ¸øÇÑ´Ù                
+		myLogger.warning(e.getMessage()); // ì—¬ê¸°ì„œ ì˜ˆì™¸ì²˜ë¦¬ í•˜ê¸° ë•Œë¬¸ì— ë©”ì¸ ë©”ì†Œë“œëŠ” ì˜ˆì™¸ë¥¼ ì•Œì§€ ëª»í•œë‹¤                
 		                                                                                       
 		//give user a custom message                                                           
 		result = "Major Accident!, But no warries";                                            
@@ -631,19 +631,19 @@ public Object aroundGetFortune(ProceedingJoinPoint theProceedingJoinPoint) throw
 	return result;                                                                             
 }
 
- 2. ´Ù½Ã ¿¹¿Ü¸¦ ´øÁú ¼ö ÀÖ´Ù
+ 2. ë‹¤ì‹œ ì˜ˆì™¸ë¥¼ ë˜ì§ˆ ìˆ˜ ìˆë‹¤
 
 } catch (Throwable e) {                                                                     
 	// got the exception                                                                    
 	myLogger.warning(e.getMessage());
 	                                                                                        
 	//give user a custom message                                                            
-	result = e; // ´Ù½Ã ¿¹¿Ü¸¦ ´øÁø´Ù
+	result = e; // ë‹¤ì‹œ ì˜ˆì™¸ë¥¼ ë˜ì§„ë‹¤
 }
 
 #Maven
- - ÇÁ·ÎÁ§Æ® °ü¸® Åø
- - ÁÖ·Î build ¹× ÀÇÁ¸¼º °ü¸®¿¡ »ç¿ë
+ - í”„ë¡œì íŠ¸ ê´€ë¦¬ íˆ´
+ - ì£¼ë¡œ build ë° ì˜ì¡´ì„± ê´€ë¦¬ì— ì‚¬ìš©
 
 # Free Maven Sources
  - https://www.jrebel.com/blog/maven-cheat-sheet
@@ -654,38 +654,38 @@ public Object aroundGetFortune(ProceedingJoinPoint theProceedingJoinPoint) throw
 
 my-app-workspace
  - pom.xml
- ¡ésrc
-  ¡émain
-   -java : ÀÚ¹Ù ¼Òµå
+ â†“src
+  â†“main
+   -java : ìë°” ì†Œë“œ
    -resources : properties, config
    -webapp : jsp,css,js
-  ¡étest : unit test
+  â†“test : unit test
    -java
    -resources
  -target : compied files
 
-# Spring Security protects against Cross-Site Request Forgery(CSRF) - (c surf¶ó°í ÀĞÀ½)
- - csrf¶õ? ÇöÀç ·Î±×ÀÎµÇ¾î ÀÖ´Â À¥¾îÇÃ¸®ÄÉÀÌ¼Ç¿¡ actionÀ» ÇÏ°Ô ÇÏ´Â °ø°İ
+# Spring Security protects against Cross-Site Request Forgery(CSRF) - (c surfë¼ê³  ì½ìŒ)
+ - csrfë€? í˜„ì¬ ë¡œê·¸ì¸ë˜ì–´ ìˆëŠ” ì›¹ì–´í”Œë¦¬ì¼€ì´ì…˜ì— actionì„ í•˜ê²Œ í•˜ëŠ” ê³µê²©
    ex: You are logged into your banking app
        Tricked into sending money to another person
 
- - csrf¸¦ ¹æ¾îÇÏ±â À§ÇØ¼­´Â Ãß°¡ÀûÀÎ ÀÎÁõ µ¥ÀÌÅÍ ¶Ç´Â ÅäÅ«À» htmlÆû¿¡ Ãß°¡ÇØ¾ß ÇÔ
- - ¹æÁö¹ı: ½ºÇÁ¸µ ½ÃÅ¥¸®Æ¼¸¦ Àû¿ëÇÏ°í, ¾î¶°ÇÑ form¿¡¼­µµ form:form »ç¿ë
- - À¢¸¸ÇÏ¸é GETº¸´Ù POST »ç¿ë
- - ¸¸¾à form:formÀ» »ç¿ëÇÏÁö ¾ÊÀ¸¸é, ¼öµ¿À¸·Î CSRF ÅäÅ«À» Ãß°¡ÇØÁÖ¾î¾ß ÇÑ´Ù
+ - csrfë¥¼ ë°©ì–´í•˜ê¸° ìœ„í•´ì„œëŠ” ì¶”ê°€ì ì¸ ì¸ì¦ ë°ì´í„° ë˜ëŠ” í† í°ì„ htmlí¼ì— ì¶”ê°€í•´ì•¼ í•¨
+ - ë°©ì§€ë²•: ìŠ¤í”„ë§ ì‹œíë¦¬í‹°ë¥¼ ì ìš©í•˜ê³ , ì–´ë– í•œ formì—ì„œë„ form:form ì‚¬ìš©
+ - ì›¬ë§Œí•˜ë©´ GETë³´ë‹¤ POST ì‚¬ìš©
+ - ë§Œì•½ form:formì„ ì‚¬ìš©í•˜ì§€ ì•Šìœ¼ë©´, ìˆ˜ë™ìœ¼ë¡œ CSRF í† í°ì„ ì¶”ê°€í•´ì£¼ì–´ì•¼ í•œë‹¤
 
  <form action="..." method="POST>
 	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
  </form>
 
 # Restricting Access to Roles
- - configurationÆÄÀÏÀ» ¼öÁ¤ÇÏ¸é µÈ´Ù
+ - configurationíŒŒì¼ì„ ìˆ˜ì •í•˜ë©´ ëœë‹¤
  - antMatcheres(<<add apth to match on>>).hasRole(<< authorized role >>)
 
-# mysql JDBC ¿É¼Ç
+# mysql JDBC ì˜µì…˜
  - jdbc:mysql://localhost:3306/web_customer_tracker?allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Seoul&amp;characterEncoding=utf8&amp;useSSL=false
 
-# jackson-databind¿¡¼­ ¸ğ¸£´Â ÇÁ·ÎÆÛÆ¼ ¹«½ÃÇÏ±â
+# jackson-databindì—ì„œ ëª¨ë¥´ëŠ” í”„ë¡œí¼í‹° ë¬´ì‹œí•˜ê¸°
  - @JsonIgnoreProperties(ignoreUnknown=true)
 
 # Http Response
@@ -703,33 +703,33 @@ my-app-workspace
   + text/html, text/plain
   + application/json, application/xml
 
-# RestApiÅ×½ºÆ® Åø
+# RestApií…ŒìŠ¤íŠ¸ íˆ´
  - Postman: https://www.postman.com/downloads/
 
-# °£´Ü JSONÅ×½ºÆ® ÁÖ¼Ò
+# ê°„ë‹¨ JSONí…ŒìŠ¤íŠ¸ ì£¼ì†Œ
  - http://teamaqua.github.io/JSONTest/
  - http://jsonplaceholder.typicode.com/
 
-# ½ºÇÁ¸µºÎÅÍ ÇÁ·ÎÁ§Æ® »ı¼º »çÀÌÆ®
+# ìŠ¤í”„ë§ë¶€í„° í”„ë¡œì íŠ¸ ìƒì„± ì‚¬ì´íŠ¸
  - https://start.spring.io/
 
- - ½ºÇÇ¸µ ºÎÆ® ½ºÅ¸ÅÍ ¸®½ºÆ® 
+ - ìŠ¤í”¼ë§ ë¶€íŠ¸ ìŠ¤íƒ€í„° ë¦¬ìŠ¤íŠ¸ 
    https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter
 # Spring boot component scan
  - Default scanning is fine if everything is under
    com.neighborpil.springboot.demo.myapp
 
- - ¸¸¾à ´Ù¸¥ ÆĞÅ°Áö°¡ ÀÖÀ» ¶§¿¡´Â ¼öµ¿À¸·Î ¼³Á¤ÇØ¾ß ÇÑ´Ù
+ - ë§Œì•½ ë‹¤ë¥¸ íŒ¨í‚¤ì§€ê°€ ìˆì„ ë•Œì—ëŠ” ìˆ˜ë™ìœ¼ë¡œ ì„¤ì •í•´ì•¼ í•œë‹¤
    @SpringBootApplication(scanBeanPackage="com.neighborpil.springboot.demo.myapp", "org.acme.iot.utils")
 
-# Spring Boot ÁÖÀÇÁ¡(JarÆÄÀÏ »ı¼º½Ã)
- - ½ºÇÁ¸µ ·¹°Å½Ã ÇÁ·ÎÁ§Æ®Ã³·³ src/main/webappµğ·ºÅä¸®¸¦ »ç¿ëÇÏÁö ¸»°Í
-   ÀÌ°Å´Â WarÆÄÀÏÀ» ¸¸µé±â À§ÇØ¼­ »ç¿ëµÇ´Â °ÍÀÌ±â ¶§¹®¿¡ JarÆÄÀÏÀ» ¸¸µé ¶§¿¡ ¹«½ÃµÈ´Ù.
- - ½ºÇÁ¸µ ºÎÆ®´Â pom.xml¿¡¼­ parent·Î ¹öÀüÀ» °ü¸®ÇÑ´Ù.
-   ÀÌ¸¦ ÅëÇÏ¿© ÇÏºÎ ¹öÀüÀº °¢°¢ °ü¸® ÇÒ ÇÊ¿ä ¾øÀÌ ºÎ¸ğ¹öÀü¿¡ ¸ÂÃß¾î È£È¯¼ºÀÌ Àû¿ëµÈ ¹öÀüÀÌ ¹Ş¾ÆÁø´Ù
+# Spring Boot ì£¼ì˜ì (JaríŒŒì¼ ìƒì„±ì‹œ)
+ - ìŠ¤í”„ë§ ë ˆê±°ì‹œ í”„ë¡œì íŠ¸ì²˜ëŸ¼ src/main/webappë””ë ‰í† ë¦¬ë¥¼ ì‚¬ìš©í•˜ì§€ ë§ê²ƒ
+   ì´ê±°ëŠ” WaríŒŒì¼ì„ ë§Œë“¤ê¸° ìœ„í•´ì„œ ì‚¬ìš©ë˜ëŠ” ê²ƒì´ê¸° ë•Œë¬¸ì— JaríŒŒì¼ì„ ë§Œë“¤ ë•Œì— ë¬´ì‹œëœë‹¤.
+ - ìŠ¤í”„ë§ ë¶€íŠ¸ëŠ” pom.xmlì—ì„œ parentë¡œ ë²„ì „ì„ ê´€ë¦¬í•œë‹¤.
+   ì´ë¥¼ í†µí•˜ì—¬ í•˜ë¶€ ë²„ì „ì€ ê°ê° ê´€ë¦¬ í•  í•„ìš” ì—†ì´ ë¶€ëª¨ë²„ì „ì— ë§ì¶”ì–´ í˜¸í™˜ì„±ì´ ì ìš©ëœ ë²„ì „ì´ ë°›ì•„ì§„ë‹¤
 
 # spring Boot Devtools
- - ¼Ò½º º¯°æ½Ã ÅèÄ¹À» Àç½ÃÀÛÇÏÁö ¾Ê°í ¹Ù·Î º¯°æ»çÇ×À» Àû¿ëÇØÁØ´Ù
+ - ì†ŒìŠ¤ ë³€ê²½ì‹œ í†°ìº£ì„ ì¬ì‹œì‘í•˜ì§€ ì•Šê³  ë°”ë¡œ ë³€ê²½ì‚¬í•­ì„ ì ìš©í•´ì¤€ë‹¤
  - dependency
 <!-- Add support for automatic reloading -->         
 <dependency>                                         
@@ -738,40 +738,40 @@ my-app-workspace
 </dependency>
 
 # spring boot actuator
- - dependency¸¦ Ãß°¡ÇØÁÖ´Â °Í ¸¸À¸·Îµµ restapi¹æ½ÄÀ¸·Î ¼­¹ö ºĞ¼® ÅøÀ» Ãß°¡ÇØÁØ´Ù
+ - dependencyë¥¼ ì¶”ê°€í•´ì£¼ëŠ” ê²ƒ ë§Œìœ¼ë¡œë„ restapië°©ì‹ìœ¼ë¡œ ì„œë²„ ë¶„ì„ íˆ´ì„ ì¶”ê°€í•´ì¤€ë‹¤
  - dependency
 <!-- Add support for actuator -->                           
 <dependency>                                                
 	<groupId>org.springframework.boot</groupId>             
 	<artifactId>spring-boot-starter-actuator</artifactId>   
 </dependency>
- - ¸ğµç °ÍÀ» º¸¿©ÁÖ°í ½Í´Ù¸é
+ - ëª¨ë“  ê²ƒì„ ë³´ì—¬ì£¼ê³  ì‹¶ë‹¤ë©´
    management.endpoints.web.exposure.include=*
- - ÀÏºÎ¸¸ º¸¿©ÁÖ°í ½Í´Ù¸é
+ - ì¼ë¶€ë§Œ ë³´ì—¬ì£¼ê³  ì‹¶ë‹¤ë©´
    
 
-# JSON Formatter Å©·Ò È®Àå ÇÁ·Î±×·¥
+# JSON Formatter í¬ë¡¬ í™•ì¥ í”„ë¡œê·¸ë¨
  - https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa/related
 
 
-# spring boot ½ÇÇà ¹æ¹ı
-## ¹æ¹ı 1
-  1. ÇÁ·ÎÁ§Æ® ¿öÅ©½ºÆäÀÌ½º Æú´õ·Î ÀÌµ¿
-  2. Ä¿¸ÇµåÇÁ·ÒÇÁÆ® ½ÇÇà
-  3. ./mvnw package ½ÇÇàÇÏ¿© ÆĞÅ°Áö »ı¼º
-  4. cd target ÇÏ¿© Å¸°Ù Æú´õ·Î ÀÌµ¿
-  5. java -jar **jarÆÄÀÏ¸í**À¸·Î ½ÇÇà
-  6. Á¾·áÇÒ ¶§´Â Ctrl + C
+# spring boot ì‹¤í–‰ ë°©ë²•
+## ë°©ë²• 1
+  1. í”„ë¡œì íŠ¸ ì›Œí¬ìŠ¤í˜ì´ìŠ¤ í´ë”ë¡œ ì´ë™
+  2. ì»¤ë§¨ë“œí”„ë¡¬í”„íŠ¸ ì‹¤í–‰
+  3. ./mvnw package ì‹¤í–‰í•˜ì—¬ íŒ¨í‚¤ì§€ ìƒì„±
+  4. cd target í•˜ì—¬ íƒ€ê²Ÿ í´ë”ë¡œ ì´ë™
+  5. java -jar **jaríŒŒì¼ëª…**ìœ¼ë¡œ ì‹¤í–‰
+  6. ì¢…ë£Œí•  ë•ŒëŠ” Ctrl + C
 
-## ¹æ¹ı2
-  1. ÇÁ·ÎÁ§Æ® ¿öÅ©½ºÆäÀÌ½º Æú´õ·Î ÀÌµ¿
-  2. Ä¿¸ÇµåÇÁ·ÒÇÁÆ® ½ÇÇà
+## ë°©ë²•2
+  1. í”„ë¡œì íŠ¸ ì›Œí¬ìŠ¤í˜ì´ìŠ¤ í´ë”ë¡œ ì´ë™
+  2. ì»¤ë§¨ë“œí”„ë¡¬í”„íŠ¸ ì‹¤í–‰
   3. ./mvnw spring-boot:run  
-  4. Á¾·áÇÒ ¶§´Â Ctrl + C
+  4. ì¢…ë£Œí•  ë•ŒëŠ” Ctrl + C
 
-# Spring Boot Ä¿½ºÅÒ properties »ç¿ë
- 1. ±âº»ÀûÀ¸·Î src/main/resources/application.properties¿¡ º¯¼ö Àû¾î »ç¿ëÇÏ¸é µÈ´Ù
- 2. javaÄÚµå ³»¿¡¼­ @Value ¾î³ëÅ×ÀÌ¼Ç ºÙ¿©¼­ »ç¿ëÇÏ¸é µÊ
+# Spring Boot ì»¤ìŠ¤í…€ properties ì‚¬ìš©
+ 1. ê¸°ë³¸ì ìœ¼ë¡œ src/main/resources/application.propertiesì— ë³€ìˆ˜ ì ì–´ ì‚¬ìš©í•˜ë©´ ëœë‹¤
+ 2. javaì½”ë“œ ë‚´ì—ì„œ @Value ì–´ë…¸í…Œì´ì…˜ ë¶™ì—¬ì„œ ì‚¬ìš©í•˜ë©´ ë¨
 ```
 @Value("${coach.name})
 private String CoachName;
@@ -805,5 +805,12 @@ private String CoachName;
  - DevTools
  - Testing
 
-## ¡ØLogging level
+## â€»Logging level
  - Trace, Debug, Info, Warn, Error, Fatal, Off
+       
+## JPA methods
+
+![image](https://user-images.githubusercontent.com/22423285/131589378-ec073192-d3d2-43c9-953a-afaf1768b07f.png)
+
+       
+       
