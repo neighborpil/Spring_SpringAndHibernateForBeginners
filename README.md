@@ -807,10 +807,24 @@ private String CoachName;
 
 ## ※Logging level
  - Trace, Debug, Info, Warn, Error, Fatal, Off
-       
+
+## hibernate crud demo
+ - 프로젝트 명 : 21-hivernate-with-service-demo
+
 ## JPA methods
+ - merge: id == 0이면 save/insert 아니면 update
 
 ![image](https://user-images.githubusercontent.com/22423285/131589378-ec073192-d3d2-43c9-953a-afaf1768b07f.png)
-
+ - 프로젝트 명: 22-jpa-cruddemo
        
-       
+#### ※bean이 2개일때 특정하는 법
+```
+	private EmployeeDAO employeeDAO;
+	
+	@Autowired
+	public EmployeeServiceImpl(@Qualifier("employeeDAOJpaImpl")EmployeeDAO theEmployeeDAO) {
+		
+		employeeDAO = theEmployeeDAO;
+	}
+	    
+```
