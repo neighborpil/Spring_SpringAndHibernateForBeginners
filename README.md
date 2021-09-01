@@ -818,6 +818,8 @@ private String CoachName;
  - 프로젝트 명: 22-jpa-cruddemo
        
 #### ※bean이 2개일때 특정하는 법
+ - @Qualifier로 특정
+ - 첫글자는 대문자      
 ```
 	private EmployeeDAO employeeDAO;
 	
