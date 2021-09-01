@@ -862,6 +862,11 @@ private String CoachName;
 	
 ## Spring Data REST
  - give me a REST CRUD implementation for Free
+ - 프로젝트명: 24-spring-data-rest-cruddemo
+ - 기본적으로 3가지가 필요하다.
+  + 1. entity(Employee.class)
+  + 2. JpaRepository: EmployeeRepository extends JpaRepository
+  + 3. Maven POM dependency for: spring-boot-starter-data-rest
 	
 ![image](https://user-images.githubusercontent.com/22423285/131758630-853b2a3a-7f1b-41ea-b440-1c848c7d0b82.png)
 
@@ -872,3 +877,17 @@ private String CoachName;
 ![image](https://user-images.githubusercontent.com/22423285/131758788-f2844f04-091f-4e8c-8d72-d0ced2d37164.png)
 	
 ![image](https://user-images.githubusercontent.com/22423285/131758823-d6bdd24e-c550-42de-9e4f-77f962ac8f88.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131759005-c8732d00-0f0e-4611-ac34-c7f479e29444.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131759162-0e18635c-c818-464f-af2d-572e2e91eb82.png)
+
+```
+		<!-- Add dependency for Spring Data REST -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>	
+```
+
+	
