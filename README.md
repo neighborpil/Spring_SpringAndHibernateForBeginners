@@ -830,3 +830,45 @@ private String CoachName;
 	}
 	    
 ```
+## Spring Data JPA
+ - https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.details
+ - 프로젝트명: 23-spring-data-jpa-cruddemo
+ - 단순히 JpaRepository<T, ID> 클래스를 상속하는것 만으로 기본적인 DAO의 클래스들을 자동으로 구현해준다(findAll, delete, ...)
+
+       
+![image](https://user-images.githubusercontent.com/22423285/131757017-45793a69-7611-454c-aaba-6cee18f57fc2.png)
+
+
+#### Java Optional
+ - 명확하게 null값을 체크가 필요할 때에, Optional은 항상 null이 아니다.
+ - 대신 안의 값이 null일수 있다
+```
+	@Override
+	public Employee findById(int theId) {
+
+		Optional<Employee> result = employeeRepository.findById(theId);
+		
+		Employee theEmployee = null;
+		if(result.isPresent()) {
+			theEmployee = result.get();
+		} else {
+			// we didn't find the employee
+			throw new RuntimeException("Did not find employee id - " + theId);
+		}
+		
+		return theEmployee; 
+	}	
+```
+	
+## Spring Data REST
+ - give me a REST CRUD implementation for Free
+	
+![image](https://user-images.githubusercontent.com/22423285/131758630-853b2a3a-7f1b-41ea-b440-1c848c7d0b82.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131758722-4b7bef99-74e0-433c-8467-c05c885fd557.png)
+
+ - maven에서 아래의 dependency를 추가만 하면 된다
+	
+![image](https://user-images.githubusercontent.com/22423285/131758788-f2844f04-091f-4e8c-8d72-d0ced2d37164.png)
+	
+![image](https://user-images.githubusercontent.com/22423285/131758823-d6bdd24e-c550-42de-9e4f-77f962ac8f88.png)
