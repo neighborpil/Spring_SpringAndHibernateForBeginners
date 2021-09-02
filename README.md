@@ -929,7 +929,60 @@ spring.data.rest.default-page-size=3
 
 ![image](https://user-images.githubusercontent.com/22423285/131926641-0263c397-3df1-477f-91a5-e4a8104d489e.png)
 
+=> 주소에서 http://localhost:8080/magic-api/employees?sort=firstName,asc 하면 된다(오름차순)
+http://localhost:8080/magic-api/employees?sort=firstName,desc (내림차순)
+	
+	
 
+## Thymleaf
+	
+![image](https://user-images.githubusercontent.com/22423285/131929192-41223d38-081b-46c5-8854-fa35716eff26.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929228-5787ed5f-d7a5-4b5e-b7b6-6d1579ea53fb.png)
+
+ - jsp랑 비슷하다
+ - jsp랑 다른점은 web 이외에 non-web enviroment 에서 사용 가능하다
+	
+![image](https://user-images.githubusercontent.com/22423285/131929327-bd6f04f5-666b-4e11-af86-fd959f136a96.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929402-5a2c4dc4-7c5d-4ce2-aec2-0e58bc8bc5df.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929441-a00212d2-a23b-4c11-9087-152b61f9f29f.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929455-9a8d246b-389d-4bae-9da7-56f551ed6913.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929494-e967be39-4936-4cca-bce4-1b16c9e59f42.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929537-7b280071-b734-426b-bd82-99cef05d0831.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929570-f05a6b03-1c50-463e-9f04-fee14d3087a0.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929609-0cd8c204-dcd8-4ebe-8ea7-177c4477e185.png)
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
