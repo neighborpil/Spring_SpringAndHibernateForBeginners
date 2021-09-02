@@ -867,6 +867,14 @@ private String CoachName;
   + 1. entity(Employee.class)
   + 2. JpaRepository: EmployeeRepository extends JpaRepository
   + 3. Maven POM dependency for: spring-boot-starter-data-rest
+ - 기본 주소 바꾸기: resources/application.properties파일 내에 추가하면 된다.
+	
+```
+#
+# Spring Data REST properties
+#
+spring.data.rest.base-path=/magic-api	
+```
 	
 ![image](https://user-images.githubusercontent.com/22423285/131758630-853b2a3a-7f1b-41ea-b440-1c848c7d0b82.png)
 
