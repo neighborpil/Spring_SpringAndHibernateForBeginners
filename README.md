@@ -913,6 +913,16 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 	
 ![image](https://user-images.githubusercontent.com/22423285/131926534-9ea99efa-2919-4dd2-8af8-481d6f186d35.png)
 
+```
+# application.properties에서
+#
+# Spring Data REST properties
+#
+spring.data.rest.base-path=/magic-api
+spring.data.rest.default-page-size=3
+```
+=> 주소에서 http://localhost:8080/magic-api/employees?page=1&size=3 파라미터 붙이면 페이징 된다
+
 ![image](https://user-images.githubusercontent.com/22423285/131926574-423ed60d-0403-4f88-aa2a-7efdc20ea960.png)
 
 ![image](https://user-images.githubusercontent.com/22423285/131926602-70414e5e-8c7a-4955-98cf-9fc45f946020.png)
