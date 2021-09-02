@@ -867,6 +867,14 @@ private String CoachName;
   + 1. entity(Employee.class)
   + 2. JpaRepository: EmployeeRepository extends JpaRepository
   + 3. Maven POM dependency for: spring-boot-starter-data-rest
+ - 기본 주소 바꾸기: resources/application.properties파일 내에 추가하면 된다.
+	
+```
+#
+# Spring Data REST properties
+#
+spring.data.rest.base-path=/magic-api	
+```
 	
 ![image](https://user-images.githubusercontent.com/22423285/131758630-853b2a3a-7f1b-41ea-b440-1c848c7d0b82.png)
 
@@ -890,4 +898,106 @@ private String CoachName;
 		</dependency>	
 ```
 
+ - 명명규칙에서 기본적으로 Entity명에 s를 붙인다. 하지만 영어의 불규칙 복수는 제대로 적용 X
+
+![image](https://user-images.githubusercontent.com/22423285/131926475-64811c78-26c3-4696-898b-e84065be163d.png)
+
+```
+
+@RepositoryRestResource(path="members")
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+	
+	// no need to write any code at all
+}
+```
+	
+![image](https://user-images.githubusercontent.com/22423285/131926534-9ea99efa-2919-4dd2-8af8-481d6f186d35.png)
+
+```
+# application.properties에서
+#
+# Spring Data REST properties
+#
+spring.data.rest.base-path=/magic-api
+spring.data.rest.default-page-size=3
+```
+=> 주소에서 http://localhost:8080/magic-api/employees?page=1&size=3 파라미터 붙이면 페이징 된다
+
+![image](https://user-images.githubusercontent.com/22423285/131926574-423ed60d-0403-4f88-aa2a-7efdc20ea960.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131926602-70414e5e-8c7a-4955-98cf-9fc45f946020.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131926641-0263c397-3df1-477f-91a5-e4a8104d489e.png)
+
+=> 주소에서 http://localhost:8080/magic-api/employees?sort=firstName,asc 하면 된다(오름차순)
+http://localhost:8080/magic-api/employees?sort=firstName,desc (내림차순)
+	
+	
+
+## Thymleaf
+	
+![image](https://user-images.githubusercontent.com/22423285/131929192-41223d38-081b-46c5-8854-fa35716eff26.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929228-5787ed5f-d7a5-4b5e-b7b6-6d1579ea53fb.png)
+
+ - jsp랑 비슷하다
+ - jsp랑 다른점은 web 이외에 non-web enviroment 에서 사용 가능하다
+	
+![image](https://user-images.githubusercontent.com/22423285/131929327-bd6f04f5-666b-4e11-af86-fd959f136a96.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929402-5a2c4dc4-7c5d-4ce2-aec2-0e58bc8bc5df.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929441-a00212d2-a23b-4c11-9087-152b61f9f29f.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929455-9a8d246b-389d-4bae-9da7-56f551ed6913.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929494-e967be39-4936-4cca-bce4-1b16c9e59f42.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929537-7b280071-b734-426b-bd82-99cef05d0831.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929570-f05a6b03-1c50-463e-9f04-fee14d3087a0.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131929609-0cd8c204-dcd8-4ebe-8ea7-177c4477e185.png)
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
