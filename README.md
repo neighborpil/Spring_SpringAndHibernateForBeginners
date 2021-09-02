@@ -898,4 +898,43 @@ spring.data.rest.base-path=/magic-api
 		</dependency>	
 ```
 
+ - 명명규칙에서 기본적으로 Entity명에 s를 붙인다. 하지만 영어의 불규칙 복수는 제대로 적용 X
+
+![image](https://user-images.githubusercontent.com/22423285/131926475-64811c78-26c3-4696-898b-e84065be163d.png)
+
+```
+
+@RepositoryRestResource(path="members")
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+	
+	// no need to write any code at all
+}
+```
+	
+![image](https://user-images.githubusercontent.com/22423285/131926534-9ea99efa-2919-4dd2-8af8-481d6f186d35.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131926574-423ed60d-0403-4f88-aa2a-7efdc20ea960.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131926602-70414e5e-8c7a-4955-98cf-9fc45f946020.png)
+
+![image](https://user-images.githubusercontent.com/22423285/131926641-0263c397-3df1-477f-91a5-e4a8104d489e.png)
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
